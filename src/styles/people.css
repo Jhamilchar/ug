@@ -1,0 +1,11 @@
+section {
+    background: black;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.people-racer {
+    width: 800px;
+    height: 500px;
+}
