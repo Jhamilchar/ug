@@ -35,8 +35,8 @@ export const ContainerInfo = styled.div`
   }
   & p {
     color: white;
-    font-family: sans-serif;
-    font-size: 0.8rem;
+    font-family: "Ember Display";
+    font-size: .78rem;
     letter-spacing: 0.1rem;
   }
 
@@ -45,7 +45,7 @@ export const ContainerInfo = styled.div`
     padding-bottom: 0.5rem;
     background-color: transparent;
     font-family: "Ember Mono";
-    font-size: 0.8rem;
+    font-size: 0.89rem;
     color: white;
     border: none;
     &:hover {

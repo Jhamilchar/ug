@@ -1,1 +1,0 @@
-document.querySelector('.bars__menu')

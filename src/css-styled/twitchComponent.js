@@ -15,7 +15,7 @@ export const LimitSection = styled.div`
   gap: 4rem;
   & .name-twitch {
     color: #7200e3;
-    font-family: "Ember Mono";
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-left: 4.5rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;

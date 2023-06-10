@@ -23,12 +23,13 @@ export const Description = styled.div`
   justify-content: center;
   margin: 0 4.5rem;
   gap: 2.8rem;
-  font-family: "Ember Mono";
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   & h2 {
     color: #7200e3;
-    font-size: .9rem;
-    letter-spacing: 0.3rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.2rem;
   }
   & h3 {
     color: white;
@@ -38,7 +39,7 @@ export const Description = styled.div`
   & p {
     color: white;
     font-size: 1.1rem;
-    font-family: 'Lato';
+    font-family: "Lato";
     text-align: justify;
   }
 `;

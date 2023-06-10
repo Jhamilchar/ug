@@ -10,7 +10,7 @@ export const TwitchSection = () => {
   return (
     <ContainerSection>
       <LimitSection>
-        <h2 className="name-twitch">Twitch</h2>
+        <h2 className="name-twitch">TWITCH</h2>
         <ContentCards>
           <CardTwitch />
           <CardTwitch />

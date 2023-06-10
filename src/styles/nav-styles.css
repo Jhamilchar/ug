@@ -1,6 +1,8 @@
 @font-face {
     font-family: 'Ember Mono';
+    font-family: 'Ember Display';
     src: url('../font/Amazon\ Ember\ Mono.ttf') format('truetype');
+    src: url('../font/Amazon\ Ember\ Display.otf') format('truetype');
 }
 
 nav {
