@@ -1,7 +1,22 @@
-import React from 'react'
+import {
+  ContainerSection,
+  LimitSection,
+  ContentCards,
+} from "../css-styled/twitchComponent.js";
+import { CardTwitch } from "../mini-components/CardTwitch.jsx";
+
 
 export const TwitchSection = () => {
   return (
-    <div>TwitchSection</div>
-  )
+    <ContainerSection>
+      <LimitSection>
+        <h2 className="name-twitch">Twitch</h2>
+        <ContentCards>
+          <CardTwitch />
+          <CardTwitch />
+          <CardTwitch />
+        </ContentCards>
+      </LimitSection>
+    </ContainerSection>
+  );
 }

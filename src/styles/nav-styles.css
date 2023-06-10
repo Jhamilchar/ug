@@ -6,38 +6,41 @@
 nav {
     background: linear-gradient(33.71deg, #000000 17.21%, #080511 26.46%, #2D1D62 46.29%, #832167 67.02%, #CD6C26 85.94%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 65vh;
 }
 
 .wraper-nav {
-    width: 85rem;
+    width: 78.93rem;
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10rem;
     margin: 0 auto;
+    gap: 7.5rem;
 }
 
 .nav-top {
     display: flex;
-    justify-content: space-between;
     padding: 1.5rem 3rem 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 2rem;
 }
 
 .logo-principal {
-    width: 38rem;
-    height: 29.5rem;
+    width: 27rem;
+    height: 20rem;
+    margin-left: 5rem;
 }
 
 .content-card {
-    width: 30rem;
-    height: 19rem;
+    height: 16rem;
+    width: 29rem;
+    margin-left: -2rem !important;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -49,7 +52,7 @@ nav {
 .content-card__title {
     color: #7200e3;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: .7rem;
     letter-spacing: .3rem;
     font-family: 'Ember Mono';
 }
@@ -57,7 +60,7 @@ nav {
 .content-card__subtitle {
     color: white;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: .1rem;
     font-family: 'Ember Mono';
 }
@@ -65,7 +68,7 @@ nav {
 .content-card__paragraphe {
     color: white;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -75,7 +78,7 @@ nav {
     padding-bottom: .5rem;
     background-color: transparent;
     font-family: 'Ember Mono';
-    font-size: 1rem;
+    font-size: .9rem;
     color: white;
     border: none;
 }

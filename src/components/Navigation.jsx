@@ -1,4 +1,4 @@
-import { Bar } from '../components/Bar'
+import { Bar } from '../mini-components/Bar'
 import '../styles/nav-styles.css'
 import logo from '../images/logo.png'
 

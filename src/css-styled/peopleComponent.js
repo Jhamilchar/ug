@@ -9,35 +9,35 @@ export const WraperPeople = styled.section`
   display: flex;
   align-items: center;
   margin: 0 auto;
-  width: 120rem;
+  width: 78.93rem;
 `;
 
 export const ImageDeep = styled.img`
-    width: 900px;
-    height: 700px;
-`
+  width: 43.75rem;
+  height: 26rem;
+`;
 
 export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 6rem;
-  gap: 3rem;
+  margin: 0 4.5rem;
+  gap: 2.8rem;
   font-family: "Ember Mono";
 
   & h2 {
     color: #7200e3;
-    font-size: 1.2rem;
+    font-size: .9rem;
     letter-spacing: 0.3rem;
   }
   & h3 {
     color: white;
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.1rem;
   }
   & p {
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: 'Lato';
     text-align: justify;
   }
