@@ -10,11 +10,19 @@ export const WraperPeople = styled.section`
   align-items: center;
   margin: 0 auto;
   width: 78.93rem;
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 `;
 
 export const ImageDeep = styled.img`
-  width: 43.75rem;
-  height: 26rem;
+  width: 50rem;
+  height: 30rem;
+  @media screen and (max-width: 768px) {
+    width: 85rem;
+    height: 45rem;
+  }
 `;
 
 export const Description = styled.div`
@@ -41,5 +49,18 @@ export const Description = styled.div`
     font-size: 1.1rem;
     font-family: "Lato";
     text-align: justify;
+  }
+  @media screen and (max-width: 768px) {
+    & h2 {
+      font-size: 1.7rem;
+    }
+
+    & h3 {
+      font-size: 3rem;
+    }
+
+    & p {
+      font-size: 1.7rem;
+    }
   }
 `;

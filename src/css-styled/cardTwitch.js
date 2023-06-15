@@ -8,11 +8,21 @@ export const Card = styled.div`
   border-radius: 1rem;
   width: 20rem;
   height: 27rem;
+  @media screen and (max-width: 768px) {
+    width: 38rem;
+    height: 45rem;
+    gap: 3rem;
+  }
 `;
 
 export const ContainerImage = styled.div`
-  width: 19.890rem;
+  width: 19.89rem;
   height: 10rem;
+  @media screen and (max-width: 768px) {
+    width: 37.89rem;
+    height: 20rem;
+
+  }
 `;
 
 export const Image = styled.img`
@@ -32,12 +42,19 @@ export const ContainerInfo = styled.div`
     font-size: 1.23rem;
     font-family: "Ember Mono";
     font-weight: bold;
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
   & p {
     color: white;
     font-family: "Ember Display";
-    font-size: .78rem;
+    font-size: 0.78rem;
     letter-spacing: 0.1rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+      text-align: center;
+    }
   }
 
   & a {
@@ -48,6 +65,9 @@ export const ContainerInfo = styled.div`
     font-size: 0.89rem;
     color: white;
     border: none;
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+    }
     &:hover {
       padding-bottom: 0.2rem;
       transition: 0.1s;

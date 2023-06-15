@@ -18,7 +18,12 @@ export const Accord = styled.div`
     font-size: 1.4rem;
     font-family: 'Ember Mono';
   }
-
+  @media screen and (max-width: 768px){
+    & .title {
+      font-size: 1.25rem;
+      margin-bottom: 2.3rem;
+    }
+  }
 `;
 
 export const Description = styled.div`
@@ -26,10 +31,13 @@ export const Description = styled.div`
   max-height: 0;
   overflow: hidden;
   margin-right: 7rem;
-  font-family: 'Ember Mono';
-  font-size: .78rem;
+  font-family: "Ember Mono";
+  font-size: 0.78rem;
   &.show {
     height: auto;
     max-height: 9999px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
   }
 `;

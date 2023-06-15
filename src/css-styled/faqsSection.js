@@ -10,6 +10,9 @@ export const BackFaqs = styled.section`
     rgba(20, 7, 57, 1) 100%
   );
   height: 30rem;
+  @media screen and (max-width: 768px) {
+    height: 90rem;
+  }
   color: white;
 `;
 
@@ -18,6 +21,9 @@ export const FaqsLimit = styled.div`
   height: 100%;
   margin: 0 auto;
   display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 export const Faqs = styled.div`
@@ -36,13 +42,27 @@ export const Faqs = styled.div`
     margin-left: 4.5rem;
     margin-top: 2rem;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 1.7rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 5rem 0;
+
+    & .learn-faqs {
+      font-size: 3rem;
+    }
+  }
 `;
 
 export const Accordion = styled.div`
-    width: 55%;
-    margin: auto 0;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-
+  width: 55%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  @media screen and (max-width: 768px) {
+    margin-left: 4.5rem;
+    gap: 8rem;
+    width: 100%;
+  }
 `;
