@@ -35,7 +35,7 @@ video {
     font-size: 1.1rem;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .wraper-nav {
         gap: 3rem;
     }
@@ -51,7 +51,7 @@ video {
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .nav-top{
         padding: 6rem 1rem 0;
     }
@@ -65,7 +65,7 @@ video {
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .nav-bottom {
         flex-direction: column;
         gap: 7rem;
@@ -78,7 +78,7 @@ video {
     margin-left: 5rem;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .logo-principal {
         width: 80rem !important;
         height: 60rem !important;
@@ -132,7 +132,7 @@ video {
     border: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .content-card {
         height: 40rem !important;
         width: 65rem !important;
