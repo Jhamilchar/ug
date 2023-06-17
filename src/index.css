@@ -45,7 +45,7 @@ a {
 
  @media screen and (max-width: 450px) {
      :root {
-         font-size: 4.5px;
+         font-size: 4.34px;
      }
 
      .wraper-nav {
@@ -56,7 +56,7 @@ a {
 
  @media screen and (max-width: 425px) {
      :root {
-         font-size: 4.5px;
+         font-size: 4.1px;
      }
 
      .wraper-nav {

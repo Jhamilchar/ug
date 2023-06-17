@@ -18,6 +18,9 @@ export const LimitFooter = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
+  @media screen and (max-width: 450px){
+    width: 94rem;
+  }
 `;
 
 export const TopFooter = styled.div`
@@ -31,7 +34,10 @@ export const TopFooter = styled.div`
     margin-top: 6rem;
     row-gap: 4rem;
   }
-`
+  @media screen and (max-width: 450px){
+    flex-direction: column;
+  }
+`;
 
 export const LeftFooter = styled.div`
   color: white;
