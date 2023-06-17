@@ -7,7 +7,7 @@ export const BackFooter = styled.div`
     height: 50rem;
   }
   @media screen and (max-width: 450px) {
-    height: 100rem;
+    height: 118rem;
   }
 `;
 export const LimitFooter = styled.div`
@@ -48,6 +48,10 @@ export const LeftFooter = styled.div`
   @media screen and (max-width: 768px) {
     margin-left: 0;
     gap: 7rem;
+  }
+  @media screen and (max-width: 450px) {
+    margin-left: 0;
+    gap: 12rem;
   }
 `;
 
