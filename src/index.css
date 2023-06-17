@@ -1,15 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "Ember Display";
+}
+
 a {
     text-decoration: none;
     color: white;
 }
-
-
- * {
-     margin: 0;
-     padding: 0;
-     list-style: none;
-     font-family: 'Poppins', sans-serif;
- }
 
  :root {
      font-size: 16px;
@@ -50,7 +49,7 @@ a {
      }
 
      .wraper-nav {
-         height: 130.2rem;
+         height: 150rem;
 
      }
  }
@@ -61,7 +60,7 @@ a {
      }
 
      .wraper-nav {
-         height: 130.2rem;
+         height: 150rem;
      }
  }
 

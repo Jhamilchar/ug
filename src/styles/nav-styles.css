@@ -5,6 +5,7 @@
     src: url('../font/Amazon\ Ember\ Display.otf') format('truetype');
 }
 
+
 nav {
     position: relative;
 }
@@ -30,9 +31,17 @@ video {
     z-index: 2;
 }
 
+.conf-link {
+    font-size: 1.1rem;
+}
+
 @media screen and (max-width: 425px) {
     .wraper-nav {
         gap: 3rem;
+    }
+
+    .conf-link {
+        font-size: 3.5rem;
     }
 }
 
@@ -41,6 +50,11 @@ video {
     padding: 1.5rem 3rem 0;
     display: flex;
     justify-content: space-between;
+}
+@media screen and (max-width: 425px) {
+    .nav-top{
+        padding: 6rem 1rem 0;
+    }
 }
 
 .nav-bottom {
@@ -54,6 +68,7 @@ video {
 @media screen and (max-width: 425px) {
     .nav-bottom {
         flex-direction: column;
+        gap: 7rem;
     }
 }
 
@@ -74,13 +89,13 @@ video {
 .content-card {
     height: 16rem;
     width: 29rem;
-    margin-left: -2rem !important;
     background-color: black;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     border: #7200e3 1px solid;
     padding: 1.5rem 3.2rem 1.3rem 1.3rem;
+
 }
 
 .content-card__title {
@@ -96,14 +111,14 @@ video {
     font-weight: 600;
     font-size: 1rem;
     letter-spacing: .1rem;
-    font-family: 'Ember Mono';
+    font-family: 'Ember Display';
 }
 
 .content-card__paragraphe {
     color: white;
     font-weight: 500;
     font-size: 1rem;
-    font-family: 'Lato', sans-serif;
+    font-family: "Ember Display";
 }
 
 .card__button {
@@ -111,10 +126,37 @@ video {
     width: 4.3rem;
     padding-bottom: .5rem;
     background-color: transparent;
-    font-family: 'Ember Mono';
+    font-family: 'Ember Display';
     font-size: 1.1rem;
     color: white;
     border: none;
+}
+
+@media screen and (max-width: 425px) {
+    .content-card {
+        height: 40rem !important;
+        width: 65rem !important;
+        padding: 7rem 10rem 1.3rem !important;
+        gap: 4.4rem;
+    }
+
+    .content-card__title {
+        font-size: 2.7rem !important;
+    }
+
+    .content-card__subtitle {
+        font-size: 3rem !important;
+    }
+
+    .content-card__paragraphe {
+        font-size: 2.8rem !important;
+    }
+
+    .card__button {
+        font-size: 2.7rem !important;
+        width: 12.3rem !important;
+        padding-bottom: 2rem !important;
+    }
 }
 
 .card__button:hover {
@@ -173,7 +215,7 @@ video {
     .content-card__title {
     font-size: 1.1rem;
     letter-spacing: .3rem;
-    font-family: 'Ember Mono';
+    font-family: 'Ember Display';
     }
 
     .content-card__subtitle {
@@ -181,14 +223,14 @@ video {
         font-weight: 600;
         font-size: 1.7rem;
         letter-spacing: .1rem;
-        font-family: 'Ember Mono';
+        font-family: 'Ember Display';
     }
 
     .content-card__paragraphe {
         color: white;
         font-weight: 600;
         font-size: 1.5rem;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Ember Display';
     }
 
     .card__button {
@@ -196,7 +238,7 @@ video {
         width: 7.2rem;
         padding-bottom: .5rem;
         background-color: transparent;
-        font-family: 'Ember Mono';
+        font-family: 'Ember Display';
         font-weight: 600;
         font-size: 1.7rem;
         color: white;

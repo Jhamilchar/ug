@@ -14,6 +14,10 @@ export const WraperPeople = styled.section`
     flex-direction: column-reverse;
     gap: 2rem;
   }
+  @media screen and (max-width: 425px) {
+    width: 94rem;
+    gap: 5rem;
+  }
 `;
 
 export const ImageDeep = styled.img`
@@ -22,6 +26,10 @@ export const ImageDeep = styled.img`
   @media screen and (max-width: 768px) {
     width: 85rem;
     height: 45rem;
+  }
+  @media screen and (max-width: 425px) {
+    width: 94.44rem;
+    height: 67rem;
   }
 `;
 
@@ -38,6 +46,7 @@ export const Description = styled.div`
     color: #7200e3;
     font-size: 0.9rem;
     letter-spacing: 0.2rem;
+    font-family: "Ember Mono";
   }
   & h3 {
     color: white;
@@ -61,6 +70,19 @@ export const Description = styled.div`
 
     & p {
       font-size: 1.7rem;
+    }
+    @media screen and (max-width: 425px) {
+      & h2 {
+        font-size: 3rem;
+      }
+
+      & h3 {
+        font-size: 4rem;
+      }
+
+      & p {
+        font-size: 2.7rem;
+      }
     }
   }
 `;

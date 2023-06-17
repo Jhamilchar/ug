@@ -6,6 +6,10 @@ export const ContainerSection = styled.section`
   @media screen and (max-width: 768px) {
     height: 120rem;
   }
+  @media screen and (max-width: 450px) {
+    height: 200rem;
+    width: 94.44rem;
+  }
 `;
 
 export const LimitSection = styled.div`
@@ -32,8 +36,12 @@ export const LimitSection = styled.div`
 `;
 
 export const ContentCards = styled.div`
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    row-gap: 3rem;
-`
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  @media screen and (max-width: 450px) {
+    align-items: center;
+    flex-direction: column;
+  }
+`;

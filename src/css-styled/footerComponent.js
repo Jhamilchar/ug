@@ -4,7 +4,7 @@ export const BackFooter = styled.div`
   height: 39rem;
   background-color: #111111;
   @media screen and (max-width: 768px) {
-    height: 60rem;
+    height: 50rem;
   }
 `;
 export const LimitFooter = styled.div`
@@ -23,9 +23,7 @@ export const TopFooter = styled.div`
   align-items: center;
   justify-content: space-between;
   @media screen and (max-width: 768px){
-    flex-direction: column;
     align-items: start;
-    justify-content: start;
     margin-left: 5rem;
     margin-top: 6rem;
     row-gap: 4rem;
@@ -69,7 +67,7 @@ export const InterLeft = styled.div`
     margin-bottom: 1.4rem;
     @media screen and (max-width: 768px) {
       line-height: 4rem;
-      font-size: 3rem;
+      font-size: 2.7rem;
     }
   }
 
@@ -96,7 +94,10 @@ export const RedesContainer = styled.div`
   flex-direction: column;
   gap: 1rem;
   & p {
-    font-size: 2.3rem;
+    font-size: 1.1rem;
+    @media screen and (max-width: 768px) {
+      font-size: 2.1rem;
+    }
   }
 `;
 
@@ -110,8 +111,12 @@ export const RightFooter = styled.div`
   flex-direction: column;
   gap: 4rem;
   width: 30rem;
-  & a{
+  margin: auto 0;
+  & a {
     font-size: 1.3rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -122,6 +127,9 @@ export const BottomFooter = styled.div`
   height: 7%;
   & p {
     font-size: 1.1rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.2rem;
+    }
   }
   & .left-line {
     width: 5px;
@@ -129,16 +137,9 @@ export const BottomFooter = styled.div`
     left: 0;
     top: 0;
     height: 100%;
-    background-image:
-      linear,
-      left top,
-      left bottom,
-      color-stop(2.55%, #ffc70b),
-      color-stop(19.79%, #ee4423),
-      color-stop(39.07%, #983b95),
-      color-stop(79.69%, #0f0b65),
-      to(#201640)
-    ;
+    background-image: linear, left top, left bottom, color-stop(2.55%, #ffc70b),
+      color-stop(19.79%, #ee4423), color-stop(39.07%, #983b95),
+      color-stop(79.69%, #0f0b65), to(#201640);
     background-image: linear-gradient(
       180deg,
       #ffc70b 2.55%,

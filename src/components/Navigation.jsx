@@ -14,7 +14,7 @@ export const Navigation = () => {
         <div className="nav-top">
           <Bar />
           <div>
-            <a href="#">V.2023 </a>
+            <a className='conf-link' target='_blank' href="https://conf.ugperu.cloud/">V.2023 </a>
           </div>
         </div>
         <div className="nav-bottom">
