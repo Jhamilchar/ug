@@ -7,8 +7,7 @@ export const ContainerSection = styled.section`
     height: 120rem;
   }
   @media screen and (max-width: 450px) {
-    height: 200rem;
-    width: 94.44rem;
+    height: 260rem;
   }
 `;
 
@@ -20,17 +19,20 @@ export const LimitSection = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 4rem;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 450px) {
+    width: 94rem;
   }
   & .name-twitch {
     color: #7200e3;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Ember Mono";
     margin-left: 4.5rem;
     font-size: 1rem;
     letter-spacing: 0.1rem;
     @media screen and (max-width: 768px) {
       font-size: 1.7rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 3rem;
     }
   }
 `;
@@ -43,5 +45,6 @@ export const ContentCards = styled.div`
   @media screen and (max-width: 450px) {
     align-items: center;
     flex-direction: column;
+    row-gap: 7rem;
   }
 `;

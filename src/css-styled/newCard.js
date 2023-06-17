@@ -13,6 +13,11 @@ export const Card = styled.div`
     width: 30rem;
     height: 25rem;
   }
+  @media screen and (max-width: 450px) {
+    width: 60rem;
+    height: 50rem;
+    gap: 2.7rem;
+  }
 `;
 
 export const ContainerImage = styled.div`
@@ -21,6 +26,10 @@ export const ContainerImage = styled.div`
   @media screen and (max-width: 768px) {
     width: 29.9rem;
     height: 14rem;
+  }
+  @media screen and (max-width: 450px) {
+    width: 59.9rem;
+    height: 29rem;
   }
 `;
 
@@ -50,10 +59,17 @@ export const ContainerInfoNews = styled.div`
     @media screen and (max-width: 768px) {
       font-size: 1.06rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 2.4rem;
+    }
 
     & .keynoutes-paragraph {
       color: black !important;
     }
+  }
+  @media screen and (max-width: 450px) {
+    gap: 3rem;
+    font-size: 2.8rem;
   }
 `;
 

@@ -13,6 +13,9 @@ export const BackFaqs = styled.section`
   @media screen and (max-width: 768px) {
     height: 90rem;
   }
+  @media screen and (max-width: 450px) {
+    height: 140rem;
+  }
   color: white;
 `;
 
@@ -23,6 +26,9 @@ export const FaqsLimit = styled.div`
   display: flex;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+  }
+  @media screen and (max-width: 450px) {
+    width: 94rem;
   }
 `;
 
@@ -47,9 +53,15 @@ export const Faqs = styled.div`
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
       "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     margin: 5rem 0;
-
     & .learn-faqs {
       font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    width: 100%;
+    font-size: 3rem;
+    & .learn-faqs {
+      font-size: 7.5rem;
     }
   }
 `;

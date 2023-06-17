@@ -10,18 +10,29 @@ export const Accord = styled.div`
     justify-content: space-between;
     cursor: pointer;
     margin-right: 6rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: .6rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 0.6rem;
   }
 
   & .title span {
     font-size: 1.4rem;
-    font-family: 'Ember Mono';
+    font-family: "Ember Mono";
   }
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 768px) {
     & .title {
       font-size: 1.25rem;
       margin-bottom: 2.3rem;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    & .title {
+      font-size: 2.2rem;
+      margin-bottom: 5rem;
+    }
+    & .title span {
+      font-size: 4rem;
+      font-family: "Ember Mono";
     }
   }
 `;
@@ -39,5 +50,9 @@ export const Description = styled.div`
   }
   @media screen and (max-width: 768px) {
     font-size: 1.5rem;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 3rem;
+    line-height: 3.3rem;
   }
 `;

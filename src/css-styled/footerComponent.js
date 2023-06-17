@@ -6,6 +6,9 @@ export const BackFooter = styled.div`
   @media screen and (max-width: 768px) {
     height: 50rem;
   }
+  @media screen and (max-width: 450px) {
+    height: 90rem;
+  }
 `;
 export const LimitFooter = styled.div`
   width: 78.93rem;

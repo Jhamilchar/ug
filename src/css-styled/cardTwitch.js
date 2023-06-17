@@ -13,6 +13,11 @@ export const Card = styled.div`
     height: 45rem;
     gap: 3rem;
   }
+  @media screen and (max-width: 450px) {
+    width: 65rem;
+    height: 72rem;
+    gap: 4rem;
+  }
 `;
 
 export const ContainerImage = styled.div`
@@ -21,7 +26,10 @@ export const ContainerImage = styled.div`
   @media screen and (max-width: 768px) {
     width: 37.89rem;
     height: 20rem;
-
+  }
+  @media screen and (max-width: 450px) {
+    width: 65rem;
+    height: 35rem;
   }
 `;
 
@@ -37,6 +45,9 @@ export const ContainerInfo = styled.div`
   align-items: center;
   gap: 1.8rem;
   margin: 0 1rem;
+  @media screen and (max-width: 450px) {
+    gap: 3rem;
+  }
   & .text-industry {
     color: white;
     font-size: 1.23rem;
@@ -44,6 +55,9 @@ export const ContainerInfo = styled.div`
     font-weight: bold;
     @media screen and (max-width: 768px) {
       font-size: 2rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 4rem;
     }
   }
   & p {
@@ -54,6 +68,9 @@ export const ContainerInfo = styled.div`
     @media screen and (max-width: 768px) {
       font-size: 1.1rem;
       text-align: center;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 2.5rem;
     }
   }
 
@@ -67,6 +84,9 @@ export const ContainerInfo = styled.div`
     border: none;
     @media screen and (max-width: 768px) {
       font-size: 1.4rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 3rem;
     }
     &:hover {
       padding-bottom: 0.2rem;
