@@ -7,7 +7,7 @@ export const BackFooter = styled.div`
     height: 50rem;
   }
   @media screen and (max-width: 450px) {
-    height: 90rem;
+    height: 100rem;
   }
 `;
 export const LimitFooter = styled.div`
@@ -55,6 +55,9 @@ export const InterLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+    @media screen and (max-width: 450px) {
+      gap: 2rem;
+    }
 
   & .input-text input {
     border-radius: 0.4rem;
@@ -67,6 +70,9 @@ export const InterLeft = styled.div`
       margin-bottom: 1rem;
       padding: 1rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 3.7rem;
+    }
   }
 
   & h3 {
@@ -77,6 +83,10 @@ export const InterLeft = styled.div`
     @media screen and (max-width: 768px) {
       line-height: 4rem;
       font-size: 2.7rem;
+    }
+    @media screen and (max-width: 450px) {
+      line-height: 6.43rem;
+      font-size: 6rem;
     }
   }
 
@@ -90,6 +100,9 @@ export const InterLeft = styled.div`
     color: white;
     @media screen and (max-width: 768px) {
       font-size: 1.5rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 3.3rem;
     }
     &:hover {
       background-color: white;
@@ -107,13 +120,20 @@ export const RedesContainer = styled.div`
     @media screen and (max-width: 768px) {
       font-size: 2.1rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 5rem;
+      gap: 1.8rem;
+    }
   }
 `;
 
 export const SocialRedes = styled.div`
   display: flex;
   gap: 1rem;
-`
+    @media screen and (max-width: 450px) {
+      gap: 3rem;
+    }
+`;
 
 export const RightFooter = styled.div`
   display: flex;
@@ -126,6 +146,9 @@ export const RightFooter = styled.div`
     @media screen and (max-width: 768px) {
       font-size: 1.5rem;
     }
+    @media screen and (max-width: 450px) {
+      font-size: 3rem;
+    }
   }
 `;
 
@@ -134,10 +157,16 @@ export const BottomFooter = styled.div`
   text-align: center;
   font-size: 0.8rem;
   height: 7%;
+  @media screen and (max-width: 450px) {
+    height: 10%;
+  }
   & p {
     font-size: 1.1rem;
     @media screen and (max-width: 768px) {
       font-size: 1.2rem;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 2.6rem;
     }
   }
   & .left-line {

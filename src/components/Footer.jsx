@@ -24,6 +24,9 @@ const StyledIcon = styled(FontAwesomeIcon)`
   @media screen and (max-width: 768px) {
     font-size: 2rem;
   }
+  @media screen and (max-width: 450px) {
+    font-size: 4rem;
+  }
 `;
 
 
