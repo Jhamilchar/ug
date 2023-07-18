@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Card = styled.div`
-  border: 1px solid #7200e3;
+  border: 1px outset #91bfff;
   display: flex;
   flex-direction: column;
   gap: 1rem;

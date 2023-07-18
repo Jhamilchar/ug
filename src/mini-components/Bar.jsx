@@ -6,7 +6,6 @@ export const Bar = () => {
 
   const animateBars = () => {
     setActiveLines(!activeLines);
-
   };
 
   return (

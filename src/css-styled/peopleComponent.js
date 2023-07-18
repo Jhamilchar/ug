@@ -10,6 +10,12 @@ export const WraperPeople = styled.section`
   align-items: center;
   margin: 0 auto;
   width: 78.93rem;
+  height: 40rem;
+  & .dual-img {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 2rem;
@@ -21,8 +27,23 @@ export const WraperPeople = styled.section`
 `;
 
 export const ImageDeep = styled.img`
-  width: 50rem;
-  height: 30rem;
+  width: 30rem;
+  height: 16rem;
+  margin-left: -12rem;
+  @media screen and (max-width: 768px) {
+    width: 85rem;
+    height: 45rem;
+  }
+  @media screen and (max-width: 450px) {
+    width: 94.44rem;
+    height: 67rem;
+  }
+`;
+
+export const ImageDeep2 = styled.img`
+  width: 30rem;
+  height: 16rem;
+  margin-left: 3rem;
   @media screen and (max-width: 768px) {
     width: 85rem;
     height: 45rem;
@@ -38,15 +59,16 @@ export const Description = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0 4.5rem;
-  gap: 2.8rem;
+  gap: 1.2rem;
+  max-width: 50%;
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   & h2 {
-    color: #7200e3;
-    font-size: 0.9rem;
+    color: #91bfff;
+    font-size: 1.3rem;
     letter-spacing: 0.2rem;
-    font-family: "Ember Mono";
   }
   & h3 {
     color: white;

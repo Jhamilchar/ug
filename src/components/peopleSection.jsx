@@ -3,8 +3,12 @@ import {
   DescriptionPeople,
   ImageDeep,
   Description,
-  WraperPeople
+  WraperPeople,
+  ImageDeep2,
 } from "../css-styled/peopleComponent";
+import "animate.css";
+
+
 
 
 export const PeopleSection = () => {
@@ -12,20 +16,25 @@ export const PeopleSection = () => {
     <DescriptionPeople>
       <WraperPeople>
         <DescriptionPeople>
-          <Description>
+          <Description className="animate__animated animate__slideInUp animate__delay-.8s">
             <h2 className="people__name">PEOPLE</h2>
-            <h3 className="people__subtitle">
-              Get inspired to innovate with AWS
-            </h3>
             <p className="people__description">
               Join us for five days of learning, networking activities,
-              announcements, and interactive events. Have fun, level up your
-              skills, and make new connections.
+              announcements, and interactive events.
+            </p>
+            <p className="people__description">
+              Join us for five days of learning, networking activities,
+              announcements, and interactive events.
+            </p>
+            <p className="people__description">
+              Join us for five days of learning, networking activities,
+              announcements, and interactive events.
             </p>
           </Description>
         </DescriptionPeople>
-        <div>
+        <div className="dual-img animate__animated animate__slideInUp animate__delay-.8s">
           <ImageDeep src={peopleRacer} alt="" className="people-racer" />
+          <ImageDeep2 src={peopleRacer} alt="" className="people-racer" />
         </div>
       </WraperPeople>
     </DescriptionPeople>

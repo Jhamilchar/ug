@@ -22,11 +22,10 @@ export const LimitNews = styled.div`
   justify-content: center;
   gap: 8rem;
   & p {
-    color: #7200e3;
-    font-family: "Ember Display";
+    color: #91bfff;
     font-weight: 200;
     margin-left: 4.5rem;
-    font-size: 2rem;
+    font-size: 1.3rem;
     letter-spacing: 0.1rem;
   }
   & a:hover {

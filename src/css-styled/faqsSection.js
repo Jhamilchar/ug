@@ -37,7 +37,8 @@ export const Faqs = styled.div`
   margin: 3rem 0;
   & .name-faqs {
     font-family: "Ember Display";
-    color: #7200e3;
+    font-size: 1.3rem;
+    color: #91bfff;
     margin-left: 4.5rem;
     margin-top: -2rem;
   }

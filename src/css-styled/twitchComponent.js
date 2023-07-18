@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 
 export const ContainerSection = styled.section`
   background-color: black;
-  height: 50rem;
+  height: 40rem;
   @media screen and (max-width: 768px) {
     height: 120rem;
   }
@@ -23,11 +23,10 @@ export const LimitSection = styled.div`
     width: 94rem;
   }
   & .name-twitch {
-    color: #7200e3;
-    font-family: "Ember Mono";
+    color: #91bfff;
     margin-left: 4.5rem;
-    font-size: 1rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
     @media screen and (max-width: 768px) {
       font-size: 1.7rem;
     }

@@ -59,15 +59,15 @@ export const InterLeft = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
-    @media screen and (max-width: 450px) {
-      gap: 2rem;
-    }
+  @media screen and (max-width: 450px) {
+    gap: 2rem;
+  }
 
   & .input-text input {
     border-radius: 0.4rem;
     background-color: transparent;
-    padding: 1rem 3rem;
-    border: 1px solid #7200e3;
+    padding: 1rem 3.6rem;
+    border: 1px solid #91bfff;
     color: white;
     @media screen and (max-width: 768px) {
       font-size: 1.44rem;
@@ -95,7 +95,7 @@ export const InterLeft = styled.div`
   }
 
   & button {
-    background-color: #7200e3;
+    background-color: #91bfff;
     border: none;
     padding: 1rem 6.5rem;
     border-radius: 0.9rem;

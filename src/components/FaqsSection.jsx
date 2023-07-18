@@ -11,8 +11,8 @@ export const FaqsSection = () => {
     <BackFaqs>
       <FaqsLimit>
         <Faqs>
-          <h2 className="name-faqs">Faqs</h2>
-          <h3 className="learn-faqs">Learn more about <br /> AWS UG PERU</h3>
+          <h2 className="name-faqs">FAQS</h2>
+          <h3 className="learn-faqs">Learn more about <br /> AWS PARA TODOS</h3>
         </Faqs>
         <Accordion>
           {dataFaq.map((item) => (

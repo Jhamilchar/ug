@@ -10,7 +10,7 @@ export const NewsSection = () => {
   return (
     <BackNews>
       <LimitNews>
-          <p>News</p>
+          <p>BLOG</p>
         <ContentCardsNews>
           <CardNews />
           <CardNews />

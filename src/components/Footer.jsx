@@ -14,7 +14,7 @@ import { faFacebook, faInstagram, faTwitch, faTwitter, faYoutube, faLinkedin } f
 import styled from "styled-components";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: #7200e3;
+  color: #91bfff;
   font-size: 1.3rem;
   transition: 0.4s;
   cursor: pointer;
@@ -38,7 +38,7 @@ export const Footer = () => {
           <LeftFooter>
             <InterLeft>
               <h3>
-                AWS UG PERU <br /> Stay up to date with
+                AWS PARA TODOS <br /> Stay up to date with
               </h3>
               <div className="input-text">
                 <input type="email" placeholder="Email" />
