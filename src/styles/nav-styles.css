@@ -97,7 +97,7 @@ video {
 @media screen and (max-width: 450px) {
     .logo-principal {
         width: 80rem !important;
-        height: 60rem !important;
+        height: 45rem !important;
         margin-left: 0rem;
     }
 }
@@ -145,7 +145,7 @@ video {
 
 @media screen and (max-width: 450px) {
     .content-card {
-        height: 40rem !important;
+        height: 50rem !important;
         width: 65rem !important;
         padding: 7rem 10rem 1.3rem !important;
         gap: 4.4rem;

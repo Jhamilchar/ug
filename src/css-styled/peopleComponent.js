@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const DescriptionPeople = styled.section`
   background-color: #000000;
   display: flex;
+  /* & {
+    @media screen and (max-width: 450px) {
+  }
+  } */
 `;
 
 export const WraperPeople = styled.section`
@@ -17,6 +21,7 @@ export const WraperPeople = styled.section`
     gap: 1.6rem;
     @media screen and (max-width: 768px) {
       align-items: center;
+      gap: 3rem;
   }
   }
   @media screen and (max-width: 768px) {
@@ -34,14 +39,14 @@ export const ImageDeep = styled.img`
   height: 16rem;
   margin-left: -12rem;
   @media screen and (max-width: 768px) {
-    width: 80rem;
-    height: 42rem;
+    width: 70rem;
+    height: 38rem;
     margin: 0;
 
   }
   @media screen and (max-width: 450px) {
-    width: 94.44rem;
-    height: 67rem;
+    width: 87rem;
+    height: 50rem;
   }
 `;
 
@@ -50,13 +55,13 @@ export const ImageDeep2 = styled.img`
   height: 16rem;
   margin-left: 3rem;
   @media screen and (max-width: 768px) {
-    width: 80rem;
-    height: 42rem;
+    width: 70rem;
+    height: 38rem;
     margin: 0;
   }
   @media screen and (max-width: 450px) {
-    width: 94.44rem;
-    height: 67rem;
+    width: 87rem;
+    height: 50rem;
   }
 `;
 
@@ -71,8 +76,17 @@ export const Description = styled.div`
   & {
     @media screen and (max-width: 768px) {
       max-width: 100%;
+      line-height: 2.5rem;
   }
   }
+
+   & {
+    @media screen and (max-width: 450px) {
+      max-width: 100%;
+      line-height: 4.4rem;
+  }
+  }
+
 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;

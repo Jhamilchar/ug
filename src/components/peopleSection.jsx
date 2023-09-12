@@ -20,7 +20,7 @@ export const PeopleSection = () => {
           <Description className="animate__animated animate__slideInUp animate__delay-.8s">
             <h2 className="people__name">Comunidad</h2>
             <p className="people__description">
-              Una comunidad dedicada a abrir las puertas del vasto universo de Amazon Web Services (AWS) para todos, sin importar tu formación previa, carrera profesional o nivel de experiencia en tecnología. Ya seas estudiante, profesional de una carrera no relacionada o simplemente un curioso tecnológico, aquí encontrarás un espacio para aprender, explorar y crecer. Ademas ofrecemos charlas vocacionales para entender mejor el mundo tecnológico y te ayudamos a trazar el camino perfecto para iniciar o fortalecer tu carrera en AWS. Únete a nosotros en este emocionante viaje hacia la nube y descubre todo lo que la tecnología tiene para ofrecerte
+              Una comunidad dedicada a abrir las puertas del vasto universo de Amazon Web Services (AWS) para todos, sin importar tu formación previa, carrera profesional o nivel de experiencia en tecnología. Ya seas estudiante, profesional de una carrera no relacionada o simplemente un curioso tecnológico, aquí encontrarás un espacio para aprender, explorar y crecer. Ademas ofrecemos charlas vocacionales para entender mejor el mundo tecnológico y te ayudamos a trazar el camino perfecto para iniciar o fortalecer tu carrera en AWS. Únete a nosotros en este emocionante viaje hacia la nube y descubre todo lo que la tecnología tiene para ofrecerte.
             </p>
             {/* <p className="people__description">
               Join us for five days of learning, networking activities,
