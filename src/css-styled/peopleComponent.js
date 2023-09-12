@@ -10,15 +10,18 @@ export const WraperPeople = styled.section`
   align-items: center;
   margin: 0 auto;
   width: 78.93rem;
-  height: 40rem;
+  padding: 4rem 0;
   & .dual-img {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.6rem;
+    @media screen and (max-width: 768px) {
+      align-items: center;
+  }
   }
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
-    gap: 2rem;
+    gap: 3rem;
   }
   @media screen and (max-width: 450px) {
     width: 94rem;
@@ -31,8 +34,10 @@ export const ImageDeep = styled.img`
   height: 16rem;
   margin-left: -12rem;
   @media screen and (max-width: 768px) {
-    width: 85rem;
-    height: 45rem;
+    width: 80rem;
+    height: 42rem;
+    margin: 0;
+
   }
   @media screen and (max-width: 450px) {
     width: 94.44rem;
@@ -45,8 +50,9 @@ export const ImageDeep2 = styled.img`
   height: 16rem;
   margin-left: 3rem;
   @media screen and (max-width: 768px) {
-    width: 85rem;
-    height: 45rem;
+    width: 80rem;
+    height: 42rem;
+    margin: 0;
   }
   @media screen and (max-width: 450px) {
     width: 94.44rem;
@@ -58,17 +64,23 @@ export const Description = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 4.5rem;
+  margin: 0 0 0 4.5rem;
   gap: 1.2rem;
   max-width: 50%;
+  line-height: 1.5rem;
+  & {
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+  }
+  }
 
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
   & h2 {
     color: #91bfff;
-    font-size: 1.3rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
   }
   & h3 {
     color: white;

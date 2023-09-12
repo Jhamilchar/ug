@@ -12,7 +12,7 @@ export const FaqsSection = () => {
       <FaqsLimit>
         <Faqs>
           <h2 className="name-faqs">FAQS</h2>
-          <h3 className="learn-faqs">Learn more about <br /> AWS PARA TODOS</h3>
+          <h3 className="learn-faqs">Más información sobre <br /> AWS PARA TODOS</h3>
         </Faqs>
         <Accordion>
           {dataFaq.map((item) => (

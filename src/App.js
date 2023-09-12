@@ -5,7 +5,7 @@ import { TwitchSection } from "./components/TwitchSection.jsx";
 import { NewsSection } from "./components/NewsSection.jsx";
 import { FaqsSection } from "./components/FaqsSection.jsx";
 import { Footer } from "./components/Footer.jsx";
-import { Suscribete } from "./components/Suscribete.jsx";
+// import { Suscribete } from "./components/Suscribete.jsx";
 import "../src/index.css";
 import React from "react";
 
@@ -21,14 +21,14 @@ const App = () => {
               <PeopleSection />
               {/* <AwsSection /> */}
               {/* <MapPeruAws /> */}
-              <TwitchSection />
-              <NewsSection />
+              {/* <TwitchSection /> */}
+              {/* <NewsSection /> */}
               <FaqsSection />
               <Footer />
             </React.Fragment>
           }
         />
-        <Route path="/suscribete" element={<Suscribete />} />
+        {/* <Route path="/suscribete" element={<Suscribete />} /> */}
       </Routes>
     </BrowserRouter>
   );

@@ -32,8 +32,24 @@ video {
 }
 
 .conf-link {
-    font-size: 1.1rem;
-}
+        font-size: 1.1rem;
+        background-image: linear-gradient(45deg, #000, white, #ffffff, #144b97, #000);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+        animation: mover 5s linear infinite;
+    }
+
+    @keyframes mover {
+        0% {
+            text-shadow: 1px 1px 2px white, 2px 2px 4px #000000, 3px 3px 6px #ffffff, 4px 4px 8px black;
+        }
+
+        100% {
+            text-shadow: 1px -1px 2px white, 2px -2px 4px #000000, 3px -3px 6px #ffffff, 4px -4px 8px black;
+        }
+    }
 
 @media screen and (max-width: 450px) {
     .wraper-nav {
@@ -74,7 +90,7 @@ video {
 
 .logo-principal {
     width: 27rem;
-    height: 20rem;
+    height: 15rem;
     margin-left: 5rem;
 }
 
@@ -100,15 +116,13 @@ video {
 .content-card__title {
     color: #91bfff;
     font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: .1rem;
+    font-size: 1.26rem;
 }
 
 .content-card__subtitle {
     color: white;
     font-weight: 600;
-    font-size: 1rem;
-    letter-spacing: .1rem;
+    font-size: .93rem;
     font-family: 'Ember Display';
 }
 

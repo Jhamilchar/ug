@@ -1,6 +1,7 @@
 .bars__menu {
     height: 30px;
     cursor: pointer;
+    z-index: 9999;
 }
 
 .bars__menu .line1__bars-menu {
