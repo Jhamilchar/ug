@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { PeopleSection } from "./components/peopleSection";
@@ -5,30 +6,39 @@ import { TwitchSection } from "./components/TwitchSection.jsx";
 import { NewsSection } from "./components/NewsSection.jsx";
 import { FaqsSection } from "./components/FaqsSection.jsx";
 import { Footer } from "./components/Footer.jsx";
-// import { Suscribete } from "./components/Suscribete.jsx";
+import Loader from "./components/Loader";
 import "../src/index.css";
-import React from "react";
 
 const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
+
     <BrowserRouter>
       <Routes>
         <Route
           path="/"
           element={
-            <React.Fragment>
-              <Navigation />
-              <PeopleSection />
-              {/* <AwsSection /> */}
-              {/* <MapPeruAws /> */}
-              {/* <TwitchSection /> */}
-              {/* <NewsSection /> */}
-              <FaqsSection />
-              <Footer />
-            </React.Fragment>
+            loading ? (
+              <Loader />
+            ) : (
+              <React.Fragment>
+                <Navigation />
+                <PeopleSection />
+                <FaqsSection />
+                {/* Otros componentes */}
+                <Footer />
+              </React.Fragment>
+            )
           }
         />
-        {/* <Route path="/suscribete" element={<Suscribete />} /> */}
       </Routes>
     </BrowserRouter>
   );

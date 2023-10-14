@@ -6,9 +6,11 @@ import {
 } from "../css-styled/faqsSection.js";
 import { FaqData } from "../mini-components/FaqData.jsx";
 import { dataFaq } from "../data/dataFaq.js";
+import '../styles/nav-styles.css'
 export const FaqsSection = () => {
+
   return (
-    <BackFaqs>
+    <BackFaqs >
       <FaqsLimit>
         <Faqs>
           <h2 className="name-faqs">FAQS</h2>

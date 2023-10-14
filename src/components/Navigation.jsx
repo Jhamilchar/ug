@@ -1,8 +1,8 @@
 import { Bar } from '../mini-components/Bar'
 import '../styles/nav-styles.css'
-import logo from '../images/wp__1_-removebg-preview.png'
+import logo from '../images/aws_para_todos_sin_fondo.png'
 import videoFile from '../video/background-principal.mp4'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import "animate.css";
 
 
@@ -13,11 +13,24 @@ export const Navigation = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    const video = document.querySelector("video");
+    window.addEventListener("scroll", () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      video.style.transform = `translate3d(0, ${scrollY * 0.5}px, 0)`; // Ajusta la velocidad del efecto parallax cambiando el valor 0.5
+    });
+
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
+  }, []);
+
   return (
-    <nav className='container-navigation'>
+    <nav className="container-navigation">
       <video autoPlay loop muted>
         <source src={videoFile} />
       </video>
+      <div className="video-overlay"></div>
       <div className="wraper-nav">
         <div className="nav-top">
           <div
@@ -50,15 +63,26 @@ export const Navigation = () => {
             />
           </div>
           <div className="content-card animate__animated animate__slideInUp animate__delay-.8s">
-            <h2 className="content-card__title">Charla de Orientación: Explora tu Futuro en Tecnología con AWS</h2>
+            <h2 className="content-card__title">
+              Charla de Orientación: Explora tu Futuro en Tecnología con AWS
+            </h2>
             <h2 className="content-card__subtitle">
-              Desde los Fundamentos hasta AWS: Tu Viaje en Tecnología Comienza Aquí
+              Desde los Fundamentos hasta AWS: Tu Viaje en Tecnología Comienza
+              Aquí
             </h2>
             <p className="content-card__paragraphe">
-              Hoy, a las 9pm, estamos emocionados de ofrecer una charla de nivel básico, para el mundo tecnológico con un enfoque en Amazon Web Services (AWS).
+              Hoy, a las 9pm, estamos emocionados de ofrecer una charla de nivel
+              básico, para el mundo tecnológico con un enfoque en Amazon Web
+              Services (AWS).
             </p>
             <div>
-              <a target='_blank' href='https://www.meetup.com/aws-para-todos/' className="card__button">Unete <span>;)</span></a>
+              <a
+                target="_blank"
+                href="https://www.meetup.com/aws-para-todos/"
+                className="card__button"
+              >
+                Unete <span>;)</span>
+              </a>
             </div>
           </div>
         </div>

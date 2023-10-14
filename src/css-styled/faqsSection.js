@@ -1,14 +1,7 @@
 import { styled } from "styled-components";
 
 export const BackFaqs = styled.section`
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    121deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(9, 1, 34, 1) 50%,
-    rgba(12, 0, 43, 1) 80%,
-    rgba(20, 7, 57, 1) 100%
-  );
+  background-color: #242f3f;
   height: 30rem;
   @media screen and (max-width: 768px) {
     height: 90rem;
