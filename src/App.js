@@ -8,6 +8,7 @@ import { FaqsSection } from "./components/FaqsSection.jsx";
 import { Footer } from "./components/Footer.jsx";
 import Loader from "./components/Loader";
 import "../src/index.css";
+import Parallax from "./components/parallax/Parallax";
 
 const App = () => {
 
@@ -17,10 +18,10 @@ const App = () => {
         <Route
           path="/"
           element={
-              <React.Fragment>
-                <Navigation />
-                <PeopleSection />
-              </React.Fragment>
+            <React.Fragment>
+              <Navigation />
+              <PeopleSection />
+            </React.Fragment>
           }
         />
       </Routes>
