@@ -10,33 +10,17 @@ import Loader from "./components/Loader";
 import "../src/index.css";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  }, []);
 
   return (
-
     <BrowserRouter>
       <Routes>
         <Route
           path="/"
           element={
-            loading ? (
-              <Loader />
-            ) : (
               <React.Fragment>
                 <Navigation />
                 <PeopleSection />
-                <FaqsSection />
-                {/* Otros componentes */}
-                <Footer />
               </React.Fragment>
-            )
           }
         />
       </Routes>

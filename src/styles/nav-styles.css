@@ -64,15 +64,9 @@ span {
     }
 }
 
-
-
-
-
-
-
 .container-navigation {
     position: relative;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 video {
@@ -98,9 +92,10 @@ video {
 }
 
 .wraper-nav {
-    width: 78.93rem;
+    width: 80rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
     gap: 7.5rem;
     height: 45rem;
@@ -139,10 +134,60 @@ video {
 }
 
 .nav-top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 4.0625rem;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.nav-top.scrolled {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.95);
+    /* Establece el color de fondo cuando está fija */
+    height: 60px;
+    /* Ajusta la altura según tus preferencias */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    border-bottom: 1px solid gray;
+    animation: slideInFromTop 0.3s ease-in-out;
+}
+
+.side-image {
+    position: absolute;
+    /* O ajusta según tus necesidades */
+    top: 10px;
+    /* Ajusta la posición superior */
+    left: 140px;
+    /* Ajusta la posición derecha */
+    width: 120px;
+    /* Ajusta el ancho de la imagen */
+    height: 45px;
+    /* Ajusta la altura de la imagen */
+    /* Otros estilos necesarios... */
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.wraper-nav-top {
+    width: 80rem;
     display: flex;
-    padding: 1.5rem 3rem 0;
+    padding: 1.5rem 2rem 0;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    z-index: 9999;
 }
 
 .cont-bar {
@@ -352,7 +397,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 99;
 }
 
 .menu-closed {
