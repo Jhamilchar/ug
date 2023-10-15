@@ -15,9 +15,14 @@ const Parallax = () => {
 
   return (
     <div className="parallax">
-      <motion.h1 className="special-text" style={{ y: yText }}>
-        AWS para Todos, AWS para Ti"
-      </motion.h1>
+      <div className="container-texts">
+        <motion.h1 className="special-text" style={{ y: yText }}>
+          AWS para Todos, AWS para Ti
+        </motion.h1>
+        <motion.p className="special-text-2" style={{ y: yText }}>
+          Descubre el Poder de AWS
+        </motion.p>
+      </div>
       <motion.div className="mountains"></motion.div>
       <motion.div style={{ y: yBg }} className="planets"></motion.div>
       <motion.div style={{ x: yBg }} className="stars"></motion.div>

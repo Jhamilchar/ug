@@ -9,10 +9,23 @@
     background: linear-gradient(180deg, #111132, #0c0c1d);
 }
 
+.container-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
 .special-text {
-    font-size: 3.2rem;
-    color: rgb(8, 66, 124);
-    z-index: 0;
+    font-size: 3rem;
+    color: #114068;
+    z-index: 3;
+}
+
+.special-text-2 {
+    font-size: 1.6rem;
+    color: #114068;
+    z-index: 3;
 }
 
 .mountains {

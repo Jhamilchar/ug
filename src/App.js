@@ -21,6 +21,7 @@ const App = () => {
             <React.Fragment>
               <Navigation />
               <PeopleSection />
+              <FaqsSection />
             </React.Fragment>
           }
         />
