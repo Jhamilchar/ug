@@ -388,10 +388,41 @@ background-color: rgba(0, 0, 0, 0.7)}
   opacity: 0.8;
   background-color: black;
   color: white;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 2fr 2fr;
   align-items: center;
-  z-index: 99;
+  padding-left: 2rem;
+}
+
+.container-menu_show {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    box-sizing: border-box;
+    padding-top: 3rem;
+}
+
+.top-text {
+    font-family: 'Ember Display';
+}
+
+.desc-text{
+    font-family: 'Ember Display';
+    text-align: justify;
+    padding-top: 3rem;
+}
+
+.show-menu_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    row-gap: 2rem;
+}
+
+.show-menu_items {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .menu-closed {

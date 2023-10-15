@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    overflow: hidden;
     background: linear-gradient(180deg, #111132, #0c0c1d);
 }
 
@@ -17,14 +18,15 @@
 }
 
 .special-text {
-    font-size: 3rem;
-    color: #114068;
+    font-size: 3.2rem;
+    color: #cee8ff;
     z-index: 3;
+
 }
 
 .special-text-2 {
-    font-size: 1.6rem;
-    color: #114068;
+    font-size: 1.7rem;
+    color: #d673e8;
     z-index: 3;
 }
 
