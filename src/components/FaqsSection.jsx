@@ -16,8 +16,10 @@ export const FaqsSection = () => {
 
   return (
     <div className="faq-section">
-      <h2 className="name-faqs">FAQS</h2>
-      <h3 className="learn-faqs">Más información sobre AWS PARA TODOS</h3>
+      <div className="info-faqs">
+        <h2 className="name-faqs">FAQS</h2>
+        <h3 className="learn-faqs">Más información sobre AWS PARA TODOS</h3>
+      </div>
       <ul className="faq-list">
         {faqData.map((item) => (
           <FaqData

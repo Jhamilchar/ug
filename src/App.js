@@ -5,6 +5,7 @@ import { FaqsSection } from "./components/FaqsSection.jsx";
 import About from './components/about/about'
 import Loader from "./components/Loader";
 import "../src/index.css";
+import { Footer } from "./components/Footer";
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
               {/* <FaqsSection /> */}
               <About />
               <FaqsSection />
+              <Footer />
             </React.Fragment>
           }
         />
