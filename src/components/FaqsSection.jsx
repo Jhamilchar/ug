@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaqData } from "../mini-components/FaqData.jsx";
 import { dataFaq } from "../data/dataFaq.js";
-import "../components/faq/faq.css"; // Asegúrate de que la ruta de importación sea correcta
+import "../components/faq/faq.css";
 
 export const FaqsSection = () => {
   const [faqData, setFaqData] = useState(dataFaq);

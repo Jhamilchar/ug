@@ -1,8 +1,28 @@
 import { styled } from "styled-components";
 
 export const BackFooter = styled.div`
-  height: 39rem;
-  background-color: #111111;
+  height: 44rem;
+  background-color: #000000;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0; /* Ajusta la posición izquierda según tus preferencias */
+    top: 0;
+    bottom: 0;
+    width: .7rem; /* Ancho del borde degradado */
+    background: linear-gradient(
+      to bottom,
+      #10acaa,
+      #072a38,
+      #650262,
+      #0f0b65,
+      #201640
+    );
+    z-index: 2; /* Para que el borde esté detrás del contenido */
+  }
   @media screen and (max-width: 768px) {
     height: 50rem;
   }
@@ -14,7 +34,7 @@ export const LimitFooter = styled.div`
   width: 78.93rem;
   height: 100%;
   margin: 0 auto;
-  gap: 2rem;
+  gap: 4rem;
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
@@ -25,16 +45,19 @@ export const LimitFooter = styled.div`
 
 export const TopFooter = styled.div`
   display: flex;
-  height: 95%;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 768px){
+  margin-top: 4rem;
+  .logo-footer {
+    width: 18.2rem;
+  }
+  @media screen and (max-width: 768px) {
     align-items: start;
     margin-left: 5rem;
     margin-top: 6rem;
     row-gap: 4rem;
   }
-  @media screen and (max-width: 450px){
+  @media screen and (max-width: 450px) {
     flex-direction: column;
   }
 `;
@@ -45,6 +68,7 @@ export const LeftFooter = styled.div`
   flex-direction: column;
   gap: 15rem;
   margin-left: 5rem;
+
   @media screen and (max-width: 768px) {
     margin-left: 0;
     gap: 7rem;
@@ -58,7 +82,7 @@ export const LeftFooter = styled.div`
 export const InterLeft = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.9rem;
   @media screen and (max-width: 450px) {
     gap: 2rem;
   }
@@ -67,7 +91,7 @@ export const InterLeft = styled.div`
     border-radius: 0.4rem;
     background-color: transparent;
     padding: 1rem 3.6rem;
-    border: 1px solid #91bfff;
+    border: 1px solid #244057;
     color: white;
     @media screen and (max-width: 768px) {
       font-size: 1.44rem;
@@ -95,9 +119,9 @@ export const InterLeft = styled.div`
   }
 
   & button {
-    background-color: #91bfff;
+    background-color: #244057;
     border: none;
-    padding: 1rem 6.5rem;
+    padding: 1rem 7.2rem;
     border-radius: 0.9rem;
     cursor: pointer;
     transition: 0.5s;
@@ -109,8 +133,16 @@ export const InterLeft = styled.div`
       font-size: 3.3rem;
     }
     &:hover {
-      background-color: white;
-      color: black;
+      background: linear-gradient(
+        to left,
+        #10acaa,
+        #072a38,
+        #650262,
+        #0f0b65,
+        #201640
+      );
+      transition: 0.5s;
+      color: #ffffff;
     }
   }
 `;
@@ -146,7 +178,8 @@ export const RightFooter = styled.div`
   width: 30rem;
   margin: auto 0;
   & a {
-    font-size: 1.3rem;
+    color: white;
+    font-size: 1.2rem;
     @media screen and (max-width: 768px) {
       font-size: 1.5rem;
     }

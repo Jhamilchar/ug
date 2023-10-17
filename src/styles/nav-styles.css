@@ -177,6 +177,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 }
 
 .wraper-nav-top {
+    position: relative;
     width: 80rem;
     display: flex;
     padding: 1.5rem 2rem 0;

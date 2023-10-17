@@ -2,7 +2,8 @@
 .faq-section {
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(204deg, rgba(12, 12, 29, 1) 14%, rgba(10, 37, 48, 1) 81%);
+    padding-bottom: 5rem;
+    background: linear-gradient(204deg, rgba(12, 12, 29, 1) 14%, rgb(16, 66, 85) 81%);
     padding-top: 8rem;
 }
 

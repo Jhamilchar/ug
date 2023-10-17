@@ -10,11 +10,12 @@ import {
   SocialRedes,
 } from "../css-styled/footerComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faTwitch, faTwitter, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebookF, faInstagram, faTwitch, faTwitter, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import logoBlue from '../images/aws_para_todos_sin_fondo.png'
 import styled from "styled-components";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: #91bfff;
+  color: #244057;
   font-size: 1.3rem;
   transition: 0.4s;
   cursor: pointer;
@@ -37,9 +38,7 @@ export const Footer = () => {
         <TopFooter>
           <LeftFooter>
             <InterLeft>
-              <h3>
-                AWS PARA TODOS <br /> Stay up to date with
-              </h3>
+              <img className="logo-footer" src={logoBlue} alt="" />
               <div className="input-text">
                 <input type="email" placeholder="Email" />
               </div>
@@ -53,7 +52,7 @@ export const Footer = () => {
               <p>Follow AWS on social media</p>
               <SocialRedes>
                 <a target="blank" href="https://www.facebook.com/awsugperu">
-                  <StyledIcon icon={faFacebook} />
+                  <StyledIcon icon={faFacebookF} />
                 </a>
                 <a target="blank" href="https://www.instagram.com/awsperu/">
                   <StyledIcon icon={faInstagram} />
@@ -67,7 +66,10 @@ export const Footer = () => {
                   <StyledIcon icon={faTwitter} />
                 </a>
 
-                <a target="blank" href="https://www.youtube.com/@AWSUserGroupPeruOficial">
+                <a
+                  target="blank"
+                  href="https://www.youtube.com/@AWSUserGroupPeruOficial"
+                >
                   <StyledIcon icon={faYoutube} />
                 </a>
 
