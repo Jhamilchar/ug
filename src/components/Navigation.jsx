@@ -9,11 +9,9 @@ export const Navigation = () => {
 
 
   return (
-    <div className="container-navigation">
+    <section className="container-navigation">
       <Nav />
       <Parallax />
-      <div className="wraper-nav">
-      </div>
-    </div>
+    </section>
   );
 }

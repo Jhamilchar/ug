@@ -1,30 +1,34 @@
-import {
-  BackFaqs,
-  FaqsLimit,
-  Accordion,
-  Faqs,
-} from "../css-styled/faqsSection.js";
+import React, { useState } from "react";
 import { FaqData } from "../mini-components/FaqData.jsx";
 import { dataFaq } from "../data/dataFaq.js";
-import '../styles/nav-styles.css'
+import "../components/faq/faq.css"; // Asegúrate de que la ruta de importación sea correcta
+
 export const FaqsSection = () => {
+  const [faqData, setFaqData] = useState(dataFaq);
+
+  const toggleAnswer = (id) => {
+    setFaqData((prevData) =>
+      prevData.map((item) =>
+        item.id === id ? { ...item, isOpen: !item.isOpen } : item
+      )
+    );
+  };
 
   return (
-    <BackFaqs >
-      <FaqsLimit>
-        <Faqs>
-          <h2 className="name-faqs">FAQS</h2>
-          <h3 className="learn-faqs">Más información sobre <br /> AWS PARA TODOS</h3>
-        </Faqs>
-        <Accordion>
-          {dataFaq.map((item) => (
-            <FaqData
-                key={item.id}
-                titlee={item.question}
-                descriptionn={item.answer} />
-          ))}
-        </Accordion>
-      </FaqsLimit>
-    </BackFaqs>
+    <div className="faq-section">
+      <h2 className="name-faqs">FAQS</h2>
+      <h3 className="learn-faqs">Más información sobre AWS PARA TODOS</h3>
+      <ul className="faq-list">
+        {faqData.map((item) => (
+          <FaqData
+            key={item.id}
+            question={item.question}
+            answer={item.answer}
+            isOpen={item.isOpen}
+            toggleAnswer={() => toggleAnswer(item.id)}
+          />
+        ))}
+      </ul>
+    </div>
   );
-}
+};

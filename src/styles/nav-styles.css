@@ -9,6 +9,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 .loader {
     background: rgb(7, 15, 23);
     font-family: montserrat;
@@ -153,7 +155,7 @@ background-color: rgba(0, 0, 0, 0.7)}
     /* O ajusta según tus necesidades */
     top: 10px;
     /* Ajusta la posición superior */
-    left: 140px;
+    left: 120px;
     /* Ajusta la posición derecha */
     width: 120px;
     /* Ajusta el ancho de la imagen */
@@ -385,14 +387,31 @@ background-color: rgba(0, 0, 0, 0.7)}
   left: 0;
   height: 100vh;
   width: 100vw;
-  opacity: 0.8;
+  opacity: 0.97;
   background-color: black;
   color: white;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 2fr 2fr;
   align-items: center;
+  backdrop-filter: blur(0.4rem);
   padding-left: 2rem;
+opacity: 1;
+    /* Establece la opacidad a 1 para mostrar suavemente el menú */
+    height: 100vh;
+    /* Ajusta la altura al valor deseado */
+    transition: opacity 0.3s, height 0.3s;
+    /* Aplica transiciones a opacidad y altura */
+}
+
+.menu-closed {
+    display: grid;
+    opacity: 0;
+    /* Establece la opacidad a 0 para ocultar suavemente el menú */
+    height: 0;
+    /* Ajusta la altura a 0 para ocultar suavemente el menú */
+    transition: opacity 0.3s, height 0.3s;
+    /* Aplica transiciones a opacidad y altura */
 }
 
 .container-menu_show {
@@ -400,17 +419,18 @@ background-color: rgba(0, 0, 0, 0.7)}
     flex-direction: column;
     width: 75%;
     box-sizing: border-box;
-    padding-top: 3rem;
+    padding-top: 1.2rem;
 }
 
 .top-text {
     font-family: 'Ember Display';
+    font-size: 2.5rem;
 }
 
 .desc-text{
     font-family: 'Ember Display';
     text-align: justify;
-    padding-top: 3rem;
+    padding-top: 1.2rem;
 }
 
 .show-menu_wrapper {
@@ -420,9 +440,20 @@ background-color: rgba(0, 0, 0, 0.7)}
     row-gap: 2rem;
 }
 
+.nav-blurred {
+  filter: blur(5px); /* Ajusta el valor de desenfoque según tus preferencias */
+  transition: filter 0.3s; /* Agrega una transición suave para el efecto */
+}
+
 .show-menu_items {
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px solid #72c0ff;
+    padding-bottom: .34rem;
+}
+
+.logo-show {
+    width: 30rem;
 }
 
 .menu-closed {

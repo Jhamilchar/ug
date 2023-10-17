@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Bar } from "../mini-components/Bar";
-import logoAside from '../images/aws_para_todos_sin_fondo.png'
+import logoShow from '../images/logo-show.png'
+import logoAside from '../images/120x45_blanco.png'
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,7 +80,7 @@ const Nav = () => {
               </a>
             </li>
           </ul>
-          <li>Pendiente</li>
+          <img  className="logo-show" src={logoShow} alt="" />
         </div>
         <div className="animate__animated animate__slideInUp animate__delay-.8s">
           <a
