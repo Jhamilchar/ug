@@ -16,14 +16,13 @@ const Nav = () => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsScrolled(true);
-        setShowImage(true); // Muestra la imagen
+        setShowImage(true);
       } else {
         setIsScrolled(false);
-        setShowImage(false); // Oculta la imagen
+        setShowImage(false);
       }
     };
 
-    // Llama a handleScroll al cargar la página para establecer el estado inicial
     handleScroll();
 
     window.addEventListener("scroll", handleScroll);

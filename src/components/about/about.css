@@ -9,16 +9,42 @@ section {
     scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper {
+        flex-direction: column;
+    }
+    .img {
+        width: 100% !important;
+        height: 40rem !important;
+    }
+    .textContainer {
+        flex: inherit !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .textContainer h2 {
+        font-size: 3.6rem;
+    }
+    .textContainer p {
+        text-align: center !important;
+        font-size: 1.5rem;
+    }
+}
+
 .about {
     background-color: #0c0c1d;
         position: relative;
 }
 
 .progress{
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    left: 0;
-    padding-top: 5rem;
+    left: 0; */
+    padding: 5rem 4rem 0 4rem;
     text-align: center;
     color: #f7981d;
     font-size: 2rem;

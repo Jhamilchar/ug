@@ -4,7 +4,26 @@
     padding: 2rem;
     padding-bottom: 5rem;
     background: linear-gradient(204deg, rgba(12, 12, 29, 1) 14%, rgb(16, 66, 85) 81%);
-    padding-top: 8rem;
+    padding-top: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .faq-section {
+        padding: 6rem 0;
+    }
+    .name-faqs {
+        font-size: 4rem !important;
+    }
+    .info-faqs {
+        padding-bottom: 3.5rem !important;
+    }
+    .learn-faqs {
+        font-size: 2rem;
+    }
+    .faq-question {
+        font-size: 1.5rem !important;
+        height: 8rem !important;
+    }
 }
 
 .info-faqs {
@@ -27,8 +46,8 @@
 }
 
 .faq-item {
-    margin-bottom: 1rem;
-    padding: 0 4rem;
+    margin-bottom: 2rem;
+    padding: 0 5rem;
 }
 
 .faq-question {
@@ -38,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     text-align: left;
     border: none;
     color: white;
