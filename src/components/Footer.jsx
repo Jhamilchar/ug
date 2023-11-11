@@ -4,14 +4,11 @@ import {
   TopFooter,
   BottomFooter,
   LeftFooter,
-  RightFooter,
-  InterLeft,
   RedesContainer,
   SocialRedes,
 } from "../css-styled/footerComponent";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faTwitch, faTwitter, faYoutube, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import logoBlue from '../images/aws_para_todos_sin_fondo.png'
 import styled from "styled-components";
 
 const StyledIcon = styled(FontAwesomeIcon)`
@@ -37,17 +34,6 @@ export const Footer = () => {
       <LimitFooter>
         <TopFooter>
           <LeftFooter>
-            <InterLeft>
-              <img className="logo-footer" src={logoBlue} alt="" />
-              <div className="input-text">
-                <input type="email" placeholder="Email" />
-              </div>
-              <div>
-                <button type="submit" className="subscribe">
-                  Subscribe
-                </button>
-              </div>
-            </InterLeft>
             <RedesContainer>
               <p>Follow AWS on social media</p>
               <SocialRedes>
@@ -79,10 +65,7 @@ export const Footer = () => {
               </SocialRedes>
             </RedesContainer>
           </LeftFooter>
-          <RightFooter>
-            <a href="">Terms and Conditions</a>
-            <a href="">Become a Sponsor</a>
-          </RightFooter>
+          
         </TopFooter>
         <BottomFooter>
           <p>

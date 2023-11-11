@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const BackFooter = styled.div`
-  height: 44rem;
+  height: 12rem;
   background-color: #000000;
 
   position: relative;
@@ -34,9 +34,10 @@ export const LimitFooter = styled.div`
   width: 78.93rem;
   height: 100%;
   margin: 0 auto;
-  gap: 4rem;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   font-family: "Poppins", sans-serif;
   @media screen and (max-width: 450px){
     width: 94rem;
@@ -47,7 +48,7 @@ export const TopFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4rem;
+  margin-top: 2rem;
   .logo-footer {
     width: 18.2rem;
   }
@@ -198,7 +199,7 @@ export const BottomFooter = styled.div`
     height: 10%;
   }
   & p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     @media screen and (max-width: 768px) {
       font-size: 1.2rem;
     }

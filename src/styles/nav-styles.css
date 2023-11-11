@@ -149,7 +149,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 .nav-top.scrolled {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.95);
-    height: 60px;
+    height: 3.75rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     z-index: 9999;
     border-bottom: 1px solid gray;
