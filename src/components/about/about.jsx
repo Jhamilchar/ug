@@ -41,7 +41,7 @@ const Single = ({ item }) => {
   const y = scrollYProgress;
 
   return (
-    <section ref={ref}>
+    <section className="about-section" ref={ref}>
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer">

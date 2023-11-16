@@ -149,7 +149,8 @@ background-color: rgba(0, 0, 0, 0.7)}
 .nav-top.scrolled {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.95);
-    height: 3.75rem;
+    height: 3.375rem;
+    padding-bottom: .7rem;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     z-index: 9999;
     border-bottom: 1px solid gray;
@@ -160,10 +161,10 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 .side-image {
     position: absolute;
-    top: 7px;
+    top: 11.5px;
     left: 120px;
-    width: 120px;
-    height: 45px;
+    width: 100px;
+    height: 40px;
 }
 
 @media screen and (max-width: 768px) {
