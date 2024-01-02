@@ -33,6 +33,7 @@ export const Footer = () => {
     <BackFooter>
       <LimitFooter>
         <TopFooter>
+          <div style={{color: 'white'}}>asd</div>
           <LeftFooter>
             <RedesContainer>
               <p>Follow AWS on social media</p>

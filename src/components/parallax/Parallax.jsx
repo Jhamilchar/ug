@@ -10,8 +10,9 @@ const Parallax = () => {
     offset: ["start start", "end start"],
   });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "1500%"]);
+  const yText2 = useTransform(scrollYProgress, [0, 1], ["0%", "2500%"]);
+  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "130%"]);
 
   return (
     <div className="parallax">
@@ -19,7 +20,7 @@ const Parallax = () => {
         <motion.h1 className="special-text" style={{ y: yText }}>
           AWS para Todos, AWS para Ti
         </motion.h1>
-        <motion.p className="special-text-2" style={{ y: yText }}>
+        <motion.p className="special-text-2" style={{ y: yText2 }}>
           Descubre el Poder de AWS
         </motion.p>
       </div>
