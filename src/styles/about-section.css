@@ -1,0 +1,33 @@
+.about-wrapper {
+    background-color: #0E0E25;
+}
+
+.about-container {
+    width: 75rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+.top-container {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-about {
+    font-size: 2rem;
+    color: white;
+}
+
+/* Items */
+
+.bot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
