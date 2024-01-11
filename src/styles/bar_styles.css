@@ -2,6 +2,9 @@
     height: 30px;
     cursor: pointer;
     z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 
 .bars__menu .line1__bars-menu {
