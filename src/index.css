@@ -1,29 +1,17 @@
-html {
-    scroll-behavior: smooth;
-}
-
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     font-family: sans-serif;
-
-}
-
-section {
-    height: 100vh;
-    scroll-snap-align: center;
 }
 
 a {
     text-decoration: none;
     color: white;
 }
-
  :root {
      font-size: 16px;
  }
-
 
  @media screen and (max-width: 768px) {
 

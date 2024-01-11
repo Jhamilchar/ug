@@ -7,7 +7,6 @@
     justify-content: center;
     box-sizing: border-box;
     overflow: hidden;
-    background: linear-gradient(180deg, #0b0d4e, #072972);
 }
 
 @media screen and (max-width: 768px) {
@@ -23,46 +22,74 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 9rem;
     gap: 1rem;
 }
 
 .special-text {
-    font-size: 3rem;
-    color: #01324e;
+    font-size: 3.5rem;
+    color: #125bc9;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     z-index: 3;
 
 }
 
 .special-text-2 {
     font-size: 1.7rem;
-    color: #ffffff;
+    color: #c9d5d6;
     z-index: 3;
     font-weight: bold;
 }
 
 .mountains {
-    background:linear-gradient(rgba(173, 173, 173, 0.507), rgba(1, 29, 56, 0.637)),
+    background:linear-gradient(rgba(28, 70, 34, 0.75), rgba(0, 42, 85, 0.589)),
      url('../images/MACHU\ PICCHU\ 02.jpg');
+    background-attachment: fixed;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     width: 100%;
     height: 100%;
     position: absolute;
     z-index: 1;
 }
 
-.planets {
-    /* background-image: url('../images/planets.png'); */
-    background-size: cover;
-    background-position: bottom;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    position: absolute;
+
+/* Medias */
+
+@media screen and (max-width: 768px){
+    .special-text {
+        font-size: 5rem !important;
+    }
+    
+    .special-text-2 {
+        font-size: 3rem !important;
+    }
 }
 
-.stars {
-    background-image: url('../images/stars.jpg');
+@media screen and (max-width: 600px){
+    .special-text {
+        font-size: 5.3rem !important;
+    }
+    
+    .special-text-2 {
+        font-size: 3.5rem !important;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .special-text {
+        font-size: 6.5rem !important;
+    }
+    
+    .special-text-2 {
+        font-size: 4.5rem !important;
+    }
+}
+
+
+
+/* .stars {
+    background-image: url('../images/top-machu.png');
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -70,4 +97,4 @@
     position: absolute;
     z-index: 0;
     overflow: hidden;
-}
+} */
