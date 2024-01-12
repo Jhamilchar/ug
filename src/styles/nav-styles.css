@@ -5,6 +5,8 @@
     src: url('../font/Amazon\ Ember\ Display.otf') format('truetype');
 }
 
+@import url('https://fonts.cdnfonts.com/css/itim');
+
 body {
     overflow-x: hidden;
 }
@@ -55,19 +57,102 @@ body {
     box-shadow: 0 0 05px rgba(255, 255, 255, .3);
 }
 
-span {
-    color: #182b3b;
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 12.5rem;
-    animation: text 3s ease-in-out infinite;
+.special-span {
+    position: relative;
+    display: inline-block;
+    padding: 0 .1rem;
+    animation: animate 3s alternate infinite;
+    font-family: 'Itim', sans-serif;
+
 }
 
-@keyframes text {
-    50%{
-        color: #fff;
+
+
+@keyframes animate {
+    0%
+    {
+        transform: translateY(0px) rotate(0deg);
     }
+    40%
+    {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50%
+    {
+        transform: translateY(-25px) rotate(180deg);
+    }
+    60%
+    {
+        transform: translateY(0px) rotate(360deg);
+    }
+    100%
+    {
+        transform: translateY(0px) rotate(360deg);
+    }
+}
+
+/* .conf-link:hover .special-span {
+    animation: animate 3s alternate infinite;
+} */
+
+.special-span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.special-span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.special-span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.special-span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.special-span:nth-child(5) {
+    animation-delay: 0.3s;
+}
+
+.special-span:nth-child(6) {
+    animation-delay: 0.1s;
+}
+
+.special-span:nth-child(7) {
+    animation-delay: 0.4s;
+}
+
+.special-span:nth-child(8) {
+    animation-delay: 0.9s;
+}
+
+.special-span:nth-child(9) {
+    animation-delay: 1s;
+}
+
+.special-span:nth-child(10) {
+    animation-delay: 0.2s;
+}
+
+.special-span:nth-child(11) {
+    animation-delay: 0.6s;
+}
+
+.special-span:nth-child(12) {
+    animation-delay: 0.7s;
+}
+
+.special-span:nth-child(13) {
+    animation-delay: 0.8s;
+}
+
+.special-span:nth-child(14) {
+    animation-delay: 0.1s;
+}
+
+.special-span:nth-child(15) {
+    animation-delay: 0.4s;
 }
 
 .container-navigation {
@@ -102,13 +187,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 
 .conf-link {
-        font-size: 1.1rem;
-        background-image: linear-gradient(45deg, #000, white, #ffffff, #144b97, #000);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        display: inline-block;
-        animation: mover 5s linear infinite;
+        font-size: 1.3rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -117,15 +196,7 @@ background-color: rgba(0, 0, 0, 0.7)}
     }
 }
 
-    @keyframes mover {
-        0% {
-            text-shadow: 1px 1px 2px white, 2px 2px 4px #000000, 3px 3px 6px #ffffff, 4px 4px 8px black;
-        }
-
-        100% {
-            text-shadow: 1px -1px 2px white, 2px -2px 4px #000000, 3px -3px 6px #ffffff, 4px -4px 8px black;
-        }
-    }
+  
 
 @media screen and (max-width: 450px) {
     .wraper-nav {
@@ -140,6 +211,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 .nav-top {
     width: 100%;
     position: fixed;
+    padding-top: 10px;
     top: 0;
     height: 4.0625rem;
     background-color: transparent;
@@ -488,6 +560,23 @@ background-color: rgba(0, 0, 0, 0.7)}
     }
 }
 
+@media screen and (max-width: 375px) {
+    .logo-show {
+        display: none;
+    }
+    .show-menu_wrapper {
+        padding-top: 0 !important;
+        row-gap: 15rem !important;
+        width: 100%;
+    }
+    .show-menu_wrapper li{
+        border-bottom: 1px solid gray;
+    }
+    .show-menu_items {
+        font-size: 5rem;
+    }
+}
+
 .menu-closed {
     display: grid;
     opacity: 0;
@@ -510,6 +599,8 @@ background-color: rgba(0, 0, 0, 0.7)}
     .container-menu_show {
         align-items: center;
         padding-top: 4rem;
+        width: 90%;
+
     }
     .top-text {
         font-size: 3rem !important;
@@ -537,17 +628,32 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 @media screen and (max-width: 425px) {
     .container-menu_show {
-        padding-top: 6.5rem;
+        padding-top: 15rem !important;
     }
     .top-text {
-        font-size: 6rem !important;
+        font-size: 4.7rem !important;
     }
     .desc-text{
-        font-size: 2.8rem !important;
+        font-size: 2.3rem !important;
         text-align: center !important;
     }
     
 }
+
+@media screen and (max-width: 375px) {
+    .container-menu_show {
+        padding-top: 19rem !important;
+    }
+    .top-text {
+        font-size: 5rem !important;
+    }
+    .desc-text{
+        font-size: 2.9rem !important;
+        text-align: center !important;
+    }
+    
+}
+
 
 .top-text {
     font-family: 'Ember Display';

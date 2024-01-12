@@ -81,13 +81,27 @@ const Nav = () => {
           </ul>
           <img  className="logo-show" src={logoShow} alt="" />
         </div>
-        <div className="animate__animated animate__slideInUp animate__delay-.8s">
+        <div className="animate__animated animate__slideInUp animate__delay-1s">
           <a
             className="conf-link"
             target="_blank"
             href="https://www.meetup.com/aws-para-todos/events/296038764/?_xtd=gqFyqTIyMzA1NTgzN6Fwo2FwaQ%253D%253D&from=ref/"
           >
-            Charla Cercana!
+            <span className="special-span">C</span>
+            <span className="special-span">h</span>
+            <span className="special-span">a</span>
+            <span className="special-span">r</span>
+            <span className="special-span">l</span>
+            <span className="special-span">a</span>
+            <span className="special-span"> </span>
+            <span className="special-span">C</span>
+            <span className="special-span">e</span>
+            <span className="special-span">r</span>
+            <span className="special-span">c</span>
+            <span className="special-span">a</span>
+            <span className="special-span">n</span>
+            <span className="special-span">a</span>
+            <span className="special-span">!</span>
           </a>
         </div>
       </div>
