@@ -42,8 +42,10 @@
 }
 
 .mountains {
-    background:linear-gradient(rgba(28, 70, 34, 0.75), rgba(0, 42, 85, 0.589)),
-     url('../images/MACHU\ PICCHU\ 02.jpg');
+    /* background:linear-gradient(rgba(28, 70, 34, 0.75), rgba(0, 42, 85, 0.589)),
+     url('../images/machu-picchu-new.jpg'); */
+    background: linear-gradient(rgba(23, 34, 20, 0.75), rgba(3, 29, 54, 0.589)),
+    url('../images/escaleras.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
