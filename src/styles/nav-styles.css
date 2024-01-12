@@ -524,7 +524,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 @media screen and (max-width: 768px) {
     .menu-open {
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 70%;
+        grid-template-rows: 30% 55%;
         justify-items: center;
     }
     .logo-show {
