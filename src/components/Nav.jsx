@@ -46,35 +46,35 @@ const Nav = () => {
         )}
         <div className={isMenuOpen ? "menu-open" : "menu-closed"}>
           <div className="container-menu_show">
-            <h2 className="top-text">Inicia tu Viaje en AWS</h2>
+            <h2 className="top-text">Inicia tu Viaje en <span className="color-special">AWS</span> </h2>
             <p className="desc-text">
               Descubre un mundo de oportunidades en la nube y únete a nuestra
               comunidad para aprender, compartir y crecer juntos
             </p>
           </div>
           <ul className="show-menu_wrapper">
-            <li className="animate__animated  animate__fadeInLeft" style={{ animationDelay: '100ms' }}>
+            <li className="animate__animated  animate__fadeIn" style={{ animationDelay: '250ms' }}>
               <a className="show-menu_items" href="">
                 Home
               </a>
             </li>
-            <li className="animate__animated  animate__fadeInLeft" style={{ animationDelay: '300ms' }}>
+            <li className="animate__animated  animate__fadeIn" style={{ animationDelay: '450ms' }}>
               <a className="show-menu_items" href="">
                 Acerca De
               </a>
             </li>
-            <li className="animate__animated animate__fadeInLeft" style={{ animationDelay: '500ms' }}>
+            <li className="animate__animated animate__fadeIn" style={{ animationDelay: '650ms' }}>
               <a className="show-menu_items" href="">
                 Objetivos
               </a>
             </li>
 
-            <li className="animate__animated animate__fadeInLeft" style={{ animationDelay: '700ms' }}>
+            <li className="animate__animated animate__fadeIn" style={{ animationDelay: '850ms' }}>
               <a className="show-menu_items" href="">
                 Faqs
               </a>
             </li>
-            <li className="animate__animated animate__fadeInLeft" style={{ animationDelay: '900ms' }}>
+            <li className="animate__animated animate__fadeIn" style={{ animationDelay: '1050ms' }}>
               <a className="show-menu_items" href="">
                 Contact
               </a>

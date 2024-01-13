@@ -192,19 +192,19 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 @media screen and (max-width: 768px) {
     .conf-link {
-        font-size: 1.5rem;
+        font-size: 1.9rem;
     }
 }
 
 @media screen and (max-width: 600px) {
     .conf-link {
-        font-size: 2.2rem;
+        font-size: 2.9rem;
     }
 }
 
 @media screen and (max-width: 450px) {
     .conf-link {
-        font-size: 3rem;
+        font-size: 3.6rem;
     }
 }
 
@@ -581,7 +581,7 @@ background-color: rgba(0, 0, 0, 0.7)}
     }
     .show-menu_wrapper {
         padding-top: 0 !important;
-        row-gap: 20rem !important;
+        row-gap: 18rem !important;
         width: 100%;
     }
     .show-menu_wrapper li{
@@ -642,12 +642,17 @@ background-color: rgba(0, 0, 0, 0.7)}
     width: 75%;
     box-sizing: border-box;
     padding-top: 1.2rem;
+    
+}
+
+.color-special {
+    color: #F7981D;
 }
 
 @media screen and (max-width: 768px) {
     .container-menu_show {
         align-items: center;
-        padding-top: 4rem;
+        padding-top: 6rem;
         width: 90%;
 
     }
@@ -655,7 +660,7 @@ background-color: rgba(0, 0, 0, 0.7)}
         font-size: 3rem !important;
     }
     .desc-text{
-        font-size: 1.4rem !important;
+        font-size: 1.7rem !important;
         text-align: center !important;
     }
     
@@ -719,7 +724,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 @media screen and (max-width: 375px) {
     .container-menu_show {
-        padding-top: 19rem !important;
+        padding-top: 12rem !important;
     }
     .top-text {
         font-size: 5rem !important;
@@ -735,12 +740,14 @@ background-color: rgba(0, 0, 0, 0.7)}
 .top-text {
     font-family: 'Ember Display';
     font-size: 2.5rem;
+    border-bottom: 1.5px solid #cf7c10;
+    padding-bottom: 1rem;
 }
 
 .desc-text{
     font-family: 'Ember Display';
     text-align: justify;
-    padding-top: 1.2rem;
+    padding-top: 2.5rem;
 }
 
 .show-menu_wrapper {
