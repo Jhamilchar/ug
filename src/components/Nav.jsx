@@ -53,27 +53,28 @@ const Nav = () => {
             </p>
           </div>
           <ul className="show-menu_wrapper">
-            <li>
+            <li className="animate__animated  animate__fadeInLeft" style={{ animationDelay: '100ms' }}>
               <a className="show-menu_items" href="">
                 Home
               </a>
             </li>
-            <li>
+            <li className="animate__animated  animate__fadeInLeft" style={{ animationDelay: '300ms' }}>
               <a className="show-menu_items" href="">
                 Acerca De
               </a>
             </li>
-            <li>
+            <li className="animate__animated animate__fadeInLeft" style={{ animationDelay: '500ms' }}>
               <a className="show-menu_items" href="">
                 Objetivos
               </a>
             </li>
-            <li>
+
+            <li className="animate__animated animate__fadeInLeft" style={{ animationDelay: '700ms' }}>
               <a className="show-menu_items" href="">
                 Faqs
               </a>
             </li>
-            <li>
+            <li className="animate__animated animate__fadeInLeft" style={{ animationDelay: '900ms' }}>
               <a className="show-menu_items" href="">
                 Contact
               </a>
@@ -85,6 +86,7 @@ const Nav = () => {
           <a
             className="conf-link"
             target="_blank"
+            rel="noreferrer"
             href="https://www.meetup.com/aws-para-todos/events/296038764/?_xtd=gqFyqTIyMzA1NTgzN6Fwo2FwaQ%253D%253D&from=ref/"
           >
             <span className="special-span">C</span>
