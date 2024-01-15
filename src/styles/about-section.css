@@ -4,7 +4,6 @@
 
 .about-container {
     width: 75rem;
-    height: 30rem;
     margin: 0 auto;
 }
 
@@ -27,22 +26,16 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
-.contenedor-3d {
-    perspective: 1000px; /* Define la perspectiva para el efecto 3D */
-  }
-  
-  .imagen-3d {
-    width: 300px;
-    height: 200px; /* Ajusta el ancho según sea necesario */
-    transition: transform 0.5s, box-shadow 0.5s; /* Agrega transiciones para un efecto suave al pasar el mouse */
-  }
-  
-  .imagen-3d:hover {
-    transform: rotateY(10deg) rotateX(-10deg) scale(1.1); /* Aplica la transformación en el hover */
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Agrega un sombreado al pasar el mouse */
-    scale: 1.02;
-  }
-  
+#imagen-3d {
+    width: 370px;
+    height: 600px;
+    transition: transform 0.1s, box-shadow 0.2s;
+    overflow: hidden;
+}
+
+#imagen-3d:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 5);
+}

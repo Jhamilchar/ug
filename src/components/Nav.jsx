@@ -7,9 +7,11 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showImage, setShowImage] = useState(false);
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    document.body.classList.toggle('menu-opened', isMenuOpen);
   };
 
   useEffect(() => {
@@ -22,15 +24,20 @@ const Nav = () => {
         setShowImage(false);
       }
     };
-
+  
     handleScroll();
-
+  
     window.addEventListener("scroll", handleScroll);
-
+  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
+  useEffect(() => {
+    // Agrega o elimina la clase al cuerpo según el estado del menú
+    document.body.classList.toggle('menu-opened', isMenuOpen);
+  }, [isMenuOpen]);
 
   return (
     <nav className={`nav-top ${isScrolled ? "scrolled" : ""}`}>
