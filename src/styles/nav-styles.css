@@ -11,6 +11,9 @@ body {
     overflow-x: hidden;
 }
 
+body.menu-opened {
+    overflow: hidden;
+}
 
 
 .loader {
@@ -524,14 +527,15 @@ background-color: rgba(0, 0, 0, 0.7)}
     align-items: center;
     justify-items: center;
     width: 75rem;
-    gap: 4rem;
 }
 
 @media screen and (max-width: 768px) {
     .wrapper-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 55%;
+        grid-template-rows: 20% 80%;
         justify-items: center;
+        gap: 4rem;
+
     }
     .logo-show {
         display: none;
