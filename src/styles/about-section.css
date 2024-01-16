@@ -1,5 +1,5 @@
 .about-wrapper {
-    background-color: rgb(224, 253, 237);
+    background-color: rgb(100, 149, 172);
 }
 
 .about-container {
@@ -30,8 +30,8 @@
 }
 
 #imagen-3d {
-    width: 370px;
-    height: 600px;
+    width: 330px;
+    height: 470px;
     transition: transform 0.1s, box-shadow 0.2s;
     overflow: hidden;
 }

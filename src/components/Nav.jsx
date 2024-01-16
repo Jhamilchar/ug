@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Bar } from "../mini-components/Bar";
-import logoShow from '../images/logo-show.png'
-import logoAside from '../images/120x45_blanco.png'
+import logoShow from "../images/logo-show.png";
+import logoAside from "../images/120x45_blanco.png";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showImage, setShowImage] = useState(false);
-  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    document.body.classList.toggle('menu-opened', isMenuOpen);
+    document.body.classList.toggle("menu-opened", isMenuOpen);
   };
 
   useEffect(() => {
@@ -24,19 +23,19 @@ const Nav = () => {
         setShowImage(false);
       }
     };
-  
+
     handleScroll();
-  
+
     window.addEventListener("scroll", handleScroll);
-  
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   useEffect(() => {
     // Agrega o elimina la clase al cuerpo según el estado del menú
-    document.body.classList.toggle('menu-opened', isMenuOpen);
+    document.body.classList.toggle("menu-opened", isMenuOpen);
   }, [isMenuOpen]);
 
   return (
@@ -52,42 +51,61 @@ const Nav = () => {
           <img src={logoAside} alt="Imagen" className="side-image" />
         )}
         <div className={isMenuOpen ? "menu-open" : "menu-closed"}>
-          <div className="container-menu_show">
-            <h2 className="top-text">Inicia tu Viaje en <span className="color-special">AWS</span> </h2>
-            <p className="desc-text">
-              Descubre un mundo de oportunidades en la nube y únete a nuestra
-              comunidad para aprender, compartir y crecer juntos
-            </p>
-          </div>
-          <ul className="show-menu_wrapper">
-            <li className="animate__animated  animate__fadeIn" style={{ animationDelay: '250ms' }}>
-              <a className="show-menu_items" href="">
-                Home
-              </a>
-            </li>
-            <li className="animate__animated  animate__fadeIn" style={{ animationDelay: '450ms' }}>
-              <a className="show-menu_items" href="">
-                Acerca De
-              </a>
-            </li>
-            <li className="animate__animated animate__fadeIn" style={{ animationDelay: '650ms' }}>
-              <a className="show-menu_items" href="">
-                Objetivos
-              </a>
-            </li>
+          <div className="wrapper-container">
+            <div className="container-menu_show">
+              <h2 className="top-text">
+                Inicia tu Viaje en <span className="color-special">AWS</span>{" "}
+              </h2>
+              <p className="desc-text">
+                Descubre un mundo de oportunidades en la nube y únete a nuestra
+                comunidad para aprender, compartir y crecer juntos
+              </p>
+            </div>
+            <ul className="show-menu_wrapper">
+              <li
+                className="animate__animated  animate__fadeIn"
+                style={{ animationDelay: "250ms" }}
+              >
+                <a className="show-menu_items" href="">
+                  Home
+                </a>
+              </li>
+              <li
+                className="animate__animated  animate__fadeIn"
+                style={{ animationDelay: "450ms" }}
+              >
+                <a className="show-menu_items" href="">
+                  Acerca De
+                </a>
+              </li>
+              <li
+                className="animate__animated animate__fadeIn"
+                style={{ animationDelay: "650ms" }}
+              >
+                <a className="show-menu_items" href="">
+                  Objetivos
+                </a>
+              </li>
 
-            <li className="animate__animated animate__fadeIn" style={{ animationDelay: '850ms' }}>
-              <a className="show-menu_items" href="">
-                Faqs
-              </a>
-            </li>
-            <li className="animate__animated animate__fadeIn" style={{ animationDelay: '1050ms' }}>
-              <a className="show-menu_items" href="">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <img  className="logo-show" src={logoShow} alt="" />
+              <li
+                className="animate__animated animate__fadeIn"
+                style={{ animationDelay: "850ms" }}
+              >
+                <a className="show-menu_items" href="">
+                  Faqs
+                </a>
+              </li>
+              <li
+                className="animate__animated animate__fadeIn"
+                style={{ animationDelay: "1050ms" }}
+              >
+                <a className="show-menu_items" href="">
+                  Contact
+                </a>
+              </li>
+            </ul>
+            <img className="logo-show" src={logoShow} alt="" />
+          </div>
         </div>
         <div className="animate__animated animate__slideInUp animate__delay-1s">
           <a
@@ -118,4 +136,4 @@ const Nav = () => {
   );
 };
 
-export default Nav
+export default Nav;

@@ -11,9 +11,6 @@ body {
     overflow-x: hidden;
 }
 
-body.menu-opened {
-    overflow: hidden;
-}
 
 
 .loader {
@@ -506,6 +503,8 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 .menu-open {
     position: fixed;
+    display: flex;
+    align-items: center;
     top: 0;
     left: 0;
     height: 100vh;
@@ -513,17 +512,23 @@ background-color: rgba(0, 0, 0, 0.7)}
     opacity: 1;
     background-color: rgba(2, 14, 31, 0.582);
     color: white;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 2fr 2fr;
-    align-items: center;
-    justify-items: center;
     backdrop-filter: blur(1rem);
     padding-left: 2rem;
 }
 
+.wrapper-container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    align-items: center;
+    justify-items: center;
+    width: 75rem;
+    gap: 4rem;
+}
+
 @media screen and (max-width: 768px) {
-    .menu-open {
+    .wrapper-container {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 55%;
         justify-items: center;
@@ -559,6 +564,10 @@ background-color: rgba(0, 0, 0, 0.7)}
     .show-menu_items {
         font-size: 2.5rem;
     }
+    .wrapper-container {
+        gap: 5rem;
+    }
+    
 }
 
 /* @media screen and (max-width: 430px) and (max-height: 932px) {
@@ -590,6 +599,9 @@ background-color: rgba(0, 0, 0, 0.7)}
     }
     .show-menu_items {
         font-size: 5.1rem;
+    }
+    .wrapper-container {
+        gap: 5.9rem;
     }
 }
 
@@ -697,7 +709,7 @@ background-color: rgba(0, 0, 0, 0.7)}
  
  @media screen and (max-width: 450px) {
     .container-menu_show {
-        padding-top: 20rem !important;
+        padding-top: 17rem !important;
     }
     .top-text {
         font-size: 7rem !important;
@@ -711,7 +723,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 @media screen and (max-width: 425px) {
     .container-menu_show {
-        padding-top: 13rem !important;
+        padding-top: 11rem !important;
     }
     .top-text {
         font-size: 4.7rem !important;
@@ -725,7 +737,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 @media screen and (max-width: 375px) {
     .container-menu_show {
-        padding-top: 12rem !important;
+        padding-top: 9rem !important;
     }
     .top-text {
         font-size: 5rem !important;
@@ -779,6 +791,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 .logo-show {
     width: 30rem;
+    padding: 0 4rem;
 }
 
 .menu-closed {
