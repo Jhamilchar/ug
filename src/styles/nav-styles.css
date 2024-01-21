@@ -516,12 +516,11 @@ background-color: rgba(0, 0, 0, 0.7)}
     background-color: rgba(2, 14, 31, 0.582);
     color: white;
     backdrop-filter: blur(1rem);
-    padding-left: 2rem;
 }
 
 .wrapper-container {
     display: grid;
-    margin: auto;
+    margin: 0 auto;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 2fr 2fr;
     align-items: center;

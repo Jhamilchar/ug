@@ -73,13 +73,17 @@ export const About = () => {
             </p>
         </div>
         <div className='bot-container'>
-          <div className="contenedor-3d">
+          <div className='position-description'>
+            <p className='about-description'>Maybe you’re needing to blow off some serious steam with an all-night party, or wanting to impress someone special with a venue that’s a little more discreet and sophisticated. Either way, if you’re looking to dance the night away, check out one of the lively music venues, dance halls, and raucous haunts.</p>
+          </div>
+          <button className='button-generic'>Unete</button>
+          {/* <div className="contenedor-3d">
             <img
                 id="imagen-3d"
                 ref={elRef}
                 src={image}
             />
-          </div>
+          </div> */}
           {/* {itemsAbout.map((item, index) => (
             <div key={index} className="about-item">
               <img src={item.img} alt={`Imagen ${index}`} />
