@@ -75,7 +75,15 @@
 
 .position-description {
     display: flex;
-    justify-content: center;}
+    justify-content: center;
+}
+
+.fade-1 {
+    position: absolute;
+    left: 0;
+    width: 40.625rem;
+    height: 62.5rem;
+}
 
 .about-description {
     font-size: 1.4rem;

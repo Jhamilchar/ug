@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { FaqsSection } from "./components/FaqsSection.jsx";
+import { Blogs } from "./components/Blogs.jsx";
 import "../src/index.css";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About.jsx";
@@ -17,6 +18,7 @@ const App = () => {
             <React.Fragment>
               <Navigation />
               <About />
+              <Blogs />
               <FaqsSection />
               <Footer />
             </React.Fragment>

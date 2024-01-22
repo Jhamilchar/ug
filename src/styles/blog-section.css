@@ -1,0 +1,36 @@
+.blog-wrapper {
+    background-color: rgb(0, 4, 12);
+    color: white;
+}
+
+.blog-container {
+    width: 75rem;
+    height: 30rem;
+    margin: 0 auto;
+}
+
+.bot-blog {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.cards-blog {
+    width: 34.6875rem;
+    height: 22.5rem;
+    background-color: #041029;
+    padding: 2rem;    
+    background: linear-gradient(to bottom, #041029 20%, #000000 90%);
+
+}
+
+.cards-blog:hover {
+    background: linear-gradient(to bottom, #041029 20%, #000000 80%);
+}
+
+.details {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}

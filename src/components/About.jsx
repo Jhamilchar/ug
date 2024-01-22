@@ -1,5 +1,8 @@
 import '../styles/about-section.css'
 import image from '../images/window-special.jpg'
+import fade from '../images/fade.png'
+import fade2 from '../images/fade2.png'
+
 import { useRef } from 'react';
 import { useEffect } from 'react';
 
@@ -67,6 +70,8 @@ export const About = () => {
   return (
     <div className="about-wrapper">
       <div className="about-container">
+      <img className='fade-1' src={fade} alt="" />
+
         <div className='top-container'>
             <p className="title-about">
               AWS explora 
