@@ -71,6 +71,7 @@
     color: #F7981D;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
+    z-index: 2;
 }
 
 .position-description {
@@ -80,20 +81,22 @@
 
 .fade-1 {
     position: absolute;
-    left: 0;
-    width: 40.625rem;
-    height: 62.5rem;
+    left: -4rem;
+    width: 40rem;
+    height: 30rem;
+    z-index: 1;
 }
 
 .about-description {
     font-size: 1.4rem;
-    max-width: 50%;
+    max-width: 63%;
     font-weight: 400;
     font-family: 'Poppins';
     line-height: 2.2rem;
     text-align: center;
     color: white;
     padding-bottom: 2rem;
+    z-index: 2;
 }
 
 .button-generic {

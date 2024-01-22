@@ -1,7 +1,6 @@
 import '../styles/about-section.css'
 import image from '../images/window-special.jpg'
 import fade from '../images/fade.png'
-import fade2 from '../images/fade2.png'
 
 import { useRef } from 'react';
 import { useEffect } from 'react';

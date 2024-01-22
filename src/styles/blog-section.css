@@ -1,36 +1,84 @@
 .blog-wrapper {
     background-color: rgb(0, 4, 12);
     color: white;
+    position: relative;
 }
 
 .blog-container {
     width: 75rem;
-    height: 30rem;
+    height: 37rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 3rem;
 }
 
 .bot-blog {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    position: relative;
+}
+
+.container-logo_aws {
+    display: flex;
+    justify-content: end;
+}
+
+.position-aws {
+    width: 15rem;
+    height: 8rem;
 }
 
 .cards-blog {
     width: 34.6875rem;
     height: 22.5rem;
     background-color: #041029;
-    padding: 2rem;    
+    padding: 1rem;    
     background: linear-gradient(to bottom, #041029 20%, #000000 90%);
-
+    transition: background 1s ease !important;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
 
 .cards-blog:hover {
     background: linear-gradient(to bottom, #041029 20%, #000000 80%);
 }
 
+
+
 .details {
     display: flex;
     align-items: start;
     flex-direction: column;
+    row-gap: 1.3rem;
+    padding: 2rem;
+}
 
+.link-blog {
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.date-blog {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.link-blog:hover {
+    text-decoration: underline;
+}
+
+.fade-2 {
+    position: absolute;
+    right: 0;
+    top: -25rem;
+    width: 20rem;
+    height: 70rem;
 }
