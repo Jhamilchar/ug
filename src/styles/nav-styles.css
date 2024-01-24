@@ -231,7 +231,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 .nav-top {
     width: 100%;
     position: fixed;
-    padding-top: 10px;
+    padding-top: 0.6rem;
     top: 0;
     height: 4.0625rem;
     background-color: transparent;

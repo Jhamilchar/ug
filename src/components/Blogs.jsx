@@ -7,7 +7,7 @@ export const Blogs = () => {
     <div className="blog-wrapper">
       <div className="blog-container">
         <div className="top-blog">
-          <h2>Contenido Exclusivo para Todos</h2>
+          <h2 className="title-blog">Contenido Exclusivo para Todos</h2>
         </div>
         <div className="bot-blog">
           <div className="cards-blog">
