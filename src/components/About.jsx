@@ -1,5 +1,4 @@
 import '../styles/about-section.css'
-import image from '../images/window-special.jpg'
 import fade from '../images/fade.png'
 
 import { useRef } from 'react';
@@ -48,24 +47,6 @@ export const About = () => {
     };
   }, []);
 
-  const itemsAbout = [
-    {
-      img: 'url_de_la_imagen',
-      title: 'Título del elemento',
-      text: 'Texto descriptivo del elemento.'
-    },
-    {
-      img: 'url_de_la_imagen',
-      title: 'Título del elemento',
-      text: 'Texto descriptivo del elemento.'
-    },
-    {
-      img: 'url_de_la_imagen',
-      title: 'Título del elemento',
-      text: 'Texto descriptivo del elemento.'
-    },
-  ]
-
   return (
     <div className="about-wrapper">
       <div className="about-container">
@@ -80,7 +61,7 @@ export const About = () => {
           <div className='position-description'>
             <p className='about-description'>Maybe you’re needing to blow off some serious steam with an all-night party, or wanting to impress someone special with a venue that’s a little more discreet and sophisticated. Either way, if you’re looking to dance the night away, check out one of the lively music venues, dance halls, and raucous haunts.</p>
           </div>
-          <button className='button-generic'>Unete</button>
+          <button className='button-generic'>Únete ;)</button>
           {/* <div className="contenedor-3d">
             <img
                 id="imagen-3d"

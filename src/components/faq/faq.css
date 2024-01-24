@@ -46,6 +46,20 @@
 }
 
 .faq-item {
+    overflow: hidden;
+    transition: height 0.3s ease-out; /* Ajusta la duración y la función de temporización según tus preferencias */
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out; /* Ajusta la duración y la función de temporización según tus preferencias */
+  }
+  
+  .faq-answer.show {
+    max-height: 1000px; /* Ajusta la altura máxima según tus necesidades o establece un valor lo suficientemente grande para manejar todas las respuestas posibles */
+  }
+.faq-item {
     margin-bottom: 2rem;
     padding: 0 5rem;
 }
