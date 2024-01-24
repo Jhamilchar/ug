@@ -576,7 +576,7 @@ background-color: rgba(0, 0, 0, 0.7)}
     .wrapper-container {
         gap: 5rem;
         height: 90%;
-        grid-template-rows: 32% 38%;
+        grid-template-rows: 35% 38%;
     }
 }
 
@@ -719,10 +719,10 @@ background-color: rgba(0, 0, 0, 0.7)}
  
  @media screen and (max-width: 450px) {
     .container-menu_show {
-        padding-top: 17rem !important;
+        padding-top: 13rem !important;
     }
     .top-text {
-        font-size: 7rem !important;
+        font-size: 6.5rem !important;
     }
     .desc-text{
         font-size: 3.3rem !important;
@@ -733,7 +733,7 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 @media screen and (max-width: 425px) {
     .container-menu_show {
-        padding-top: 11rem !important;
+        padding-top: 2rem !important;
     }
     .top-text {
         font-size: 4.7rem !important;
