@@ -316,9 +316,6 @@ background-color: rgba(0, 0, 0, 0.7)}
     z-index: 9999;
 }
 
-@media screen and (max-width: 450px) {
-}
-
 .nav-bottom {
     display: flex;
     align-items: center;
@@ -569,6 +566,8 @@ background-color: rgba(0, 0, 0, 0.7)}
     }
     .wrapper-container {
         gap: 5rem;
+        height: 90%;
+        grid-template-rows: 30% 55%;
     }
     
 }

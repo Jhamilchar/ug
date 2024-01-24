@@ -83,9 +83,17 @@ const Nav = () => {
                 style={{ animationDelay: "650ms" }}
               >
                 <a className="show-menu_items" href="">
-                  Objetivos
+                  Blog
                 </a>
               </li>
+              {/* <li
+                className="animate__animated animate__fadeIn"
+                style={{ animationDelay: "650ms" }}
+              >
+                <a className="show-menu_items" href="">
+                  Objetivos
+                </a>
+              </li> */}
 
               <li
                 className="animate__animated animate__fadeIn"
