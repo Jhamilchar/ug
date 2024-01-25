@@ -576,7 +576,7 @@ background-color: rgba(0, 0, 0, 0.7)}
     .wrapper-container {
         gap: 5rem;
         height: 90%;
-        grid-template-rows: 35% 38%;
+        grid-template-rows: 20% 56%;
     }
 }
 

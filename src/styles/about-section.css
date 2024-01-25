@@ -105,7 +105,7 @@
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     .about-container {
         width: 92rem !important;
         height: 100rem !important;
@@ -128,6 +128,7 @@
     .button-generic {
         font-size: 4rem !important;
         padding: 1.7rem 3.7rem !important;
+        border-radius: 1rem;
     }
     .bot-container {
         row-gap: 4.5rem !important;
