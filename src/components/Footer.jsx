@@ -39,7 +39,7 @@ export const Footer = () => {
           <div className="">
             <img className="logo-footer" src={logo_footer} alt="" />
           </div>
-          <div className="middle">
+          {/* <div className="middle">
           <div className=" mid-footer">
               <p className="title-footer">Our work</p>
               <a className="special-link_footer" href="">Perpetual Flight</a>
@@ -50,7 +50,7 @@ export const Footer = () => {
               <a className="special-link_footer" href="">About</a>
               <a className="special-link_footer" href="">News</a>
             </div>
-          </div>
+          </div> */}
             
           <div className="redes">
             <div className="container-button">
