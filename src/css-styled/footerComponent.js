@@ -32,7 +32,7 @@ export const BackFooter = styled.div`
 `;
 export const LimitFooter = styled.div`
   width: 78.93rem;
-  height: 100%;
+  height: 75%;
   margin: 0 auto;
   align-items: center;
   display: flex;
@@ -42,6 +42,7 @@ export const LimitFooter = styled.div`
   @media screen and (max-width: 450px){
     width: 94rem;
   }
+  border-bottom: 1px solid white;
 `;
 
 export const TopFooter = styled.div`
