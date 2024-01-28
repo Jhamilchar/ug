@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from "react";
+import {
+  Link,
+  animateScroll as scroll,
+} from "react-scroll";
 import { Bar } from "../mini-components/Bar";
 import logoShow from "../images/logo-show.png";
 import logoAside from "../images/120x45_blanco.png";
@@ -38,6 +42,12 @@ const Nav = () => {
     document.body.classList.toggle("menu-opened", isMenuOpen);
   }, [isMenuOpen]);
 
+  
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    document.body.classList.remove("menu-opened");
+  };
+
   return (
     <nav className={`nav-top ${isScrolled ? "scrolled" : ""}`}>
       <div className="wraper-nav-top">
@@ -66,50 +76,73 @@ const Nav = () => {
                 className="animate__animated  animate__fadeIn"
                 style={{ animationDelay: "250ms" }}
               >
-                <a className="show-menu_items" href="">
+                <Link
+                  to="section-home"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="show-menu_items"
+                  onClick={closeMenu}
+                >
                   Home
-                </a>
+                </Link>
               </li>
               <li
                 className="animate__animated  animate__fadeIn"
                 style={{ animationDelay: "450ms" }}
               >
-                <a className="show-menu_items" href="">
+                <Link
+                  to="section-about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="show-menu_items"
+                  onClick={closeMenu}
+                >
                   Acerca De
-                </a>
+                </Link>
               </li>
               <li
                 className="animate__animated animate__fadeIn"
                 style={{ animationDelay: "650ms" }}
               >
-                <a className="show-menu_items" href="">
+                <Link
+                  to="section-blog"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="show-menu_items"
+                  onClick={closeMenu}>
                   Blog
-                </a>
+                </Link>
               </li>
-              {/* <li
-                className="animate__animated animate__fadeIn"
-                style={{ animationDelay: "650ms" }}
-              >
-                <a className="show-menu_items" href="">
-                  Objetivos
-                </a>
-              </li> */}
-
               <li
                 className="animate__animated animate__fadeIn"
                 style={{ animationDelay: "850ms" }}
               >
-                <a className="show-menu_items" href="">
+                <Link
+                  to="section-faq"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="show-menu_items"
+                  onClick={closeMenu}
+                 >
                   Faqs
-                </a>
+                </Link>
               </li>
               <li
                 className="animate__animated animate__fadeIn"
                 style={{ animationDelay: "1050ms" }}
               >
-                <a className="show-menu_items" href="">
-                  Contact
-                </a>
+                <Link to="section-contact"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  className="show-menu_items"
+                  onClick={closeMenu}>
+                  Contactame
+                </Link>
               </li>
             </ul>
             <img className="logo-show" src={logoShow} alt="" />

@@ -1,13 +1,16 @@
 import "../styles/blog-section.css";
 import fade2 from "../images/fade2.png";
+import {
+  Element
+} from "react-scroll";
 import aws from "../images/special.png";
 
 export const Blogs = () => {
   return (
-    <div className="blog-wrapper">
+    <Element name="section-blog" className="blog-wrapper">
       <div className="blog-container">
         <div className="top-blog">
-          <h2 className="title-blog">Contenido Exclusivo para Todos</h2>
+          <h2 className="title-blog">Ultimos eventos</h2>
         </div>
         <div className="bot-blog">
           <div className="cards-blog">
@@ -15,8 +18,8 @@ export const Blogs = () => {
               <img className="position-aws" src={aws} alt="" />
             </div>
             <div className="details">
-              <a className="link-blog" href="#blog">Celebrate the Ti on all platforms just for fun or more</a>
-              <p className="date-blog">Jun 30, 2023</p>
+              <a className="link-blog" href="https://www.meetup.com/es-ES/aws-para-todos/events/296440967/" target="_blank">Despierta Tu Curiosidad Tecnológica: Una Guía para Principiantes</a>
+              <p className="date-blog">Oct 10, 2023</p>
             </div>
           </div>
           <div className="cards-blog">
@@ -24,13 +27,13 @@ export const Blogs = () => {
               <img className="position-aws" src={aws} alt="" />
             </div>
             <div className="details">
-              <a className="link-blog" href="#blog">Celebrate the Ti on all platforms and simple dont see this ti</a>
-              <p className="date-blog">Jun 30, 2023</p>
+              <a className="link-blog" href="https://www.meetup.com/es-ES/aws-para-todos/events/296038764/">Tu Brújula Digital: Cómo Elegir Tu Futura Carrera en Tecnología</a>
+              <p className="date-blog">Sep 11, 2023</p>
             </div>
           </div>
         </div>
       </div>
       <img className="fade-2" src={fade2} alt="" />
-    </div>
+    </Element>
   );
 };

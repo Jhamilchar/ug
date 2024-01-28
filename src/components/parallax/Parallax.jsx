@@ -1,9 +1,12 @@
 import "../../styles/parallax.css";
+import {
+  Element
+} from "react-scroll";
 
 const Parallax = () => {
 
   return (
-    <div className="parallax">
+    <Element name='section-home'  className="parallax">
       <div className="mountains"></div>
         <div className="container-texts">
           <h1 className="special-text">
@@ -13,7 +16,7 @@ const Parallax = () => {
             Descubre el Poder de AWS
           </p>
         </div>
-    </div>
+    </Element>
   );
 };
 

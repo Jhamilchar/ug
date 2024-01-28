@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { FaqData } from "../mini-components/FaqData.jsx";
 import { dataFaq } from "../data/dataFaq.js";
+import {
+  Element
+} from "react-scroll";
 import "../components/faq/faq.css";
 
 export const FaqsSection = () => {
@@ -15,7 +18,7 @@ export const FaqsSection = () => {
   };
 
   return (
-    <div className="faq-section">
+    <Element name="section-faq" className="faq-section">
       <div className="faq-wrapp">
         <div className="info-faqs">
           <h2 className="name-faqs">FAQS</h2>
@@ -33,6 +36,6 @@ export const FaqsSection = () => {
           ))}
         </ul>
       </div>
-    </div>
+    </Element>
   );
 };

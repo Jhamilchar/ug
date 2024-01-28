@@ -7,13 +7,14 @@ import {
   faYoutube,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { Element } from "react-scroll";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import logo_footer from "../images/120x45_blanco.png";
 import "../styles/footer.css";
 
 const StyledIcon = styled(FontAwesomeIcon)`
-  color: #22377E;
+  color: #22377e;
   font-size: 1.3rem;
   transition: 0.4s;
   cursor: pointer;
@@ -33,7 +34,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 export const Footer = () => {
   return (
-    <div className="footer-container">
+    <Element name="section-contact" className="footer-container">
       <div className="footer-wrapper">
         <div className="top-footer">
           <div className="">
@@ -51,39 +52,41 @@ export const Footer = () => {
               <a className="special-link_footer" href="">News</a>
             </div>
           </div> */}
-            
+
           <div className="redes">
             <div className="container-button">
-              <button className="button-footer">
-                C o n t a c t a m e 
-                <span>
-                <FontAwesomeIcon className="icon-special" icon={faArrowRight} />
-                </span>
-              </button>
-              
+                <a target="_blank" href="mailto:nefi@awsparatodos.com" className="button-footer">
+                  C o n t a c t a m e
+                  <span>
+                    <FontAwesomeIcon
+                      className="icon-special"
+                      icon={faArrowRight}
+                    />
+                  </span>
+                </a>
             </div>
-            
-            <div className="social">
-              <a target="blank" href="https://www.instagram.com/awsperu/">
-                <StyledIcon icon={faInstagram} />
-              </a>
 
-              <a target="blank" href="https://www.twitch.tv/awsugperu">
+            <div className="social">
+              {/* <a target="blank" href="https://www.instagram.com/awsperu/">
+                <StyledIcon icon={faInstagram} />
+              </a> */}
+
+              <a target="blank" href="">
                 <StyledIcon icon={faTwitch} />
               </a>
 
-              <a target="blank" href="https://twitter.com/AWSPeru">
+              <a target="blank" href="">
                 <StyledIcon icon={faTwitter} />
               </a>
 
-              <a
+              <a 
                 target="blank"
-                href="https://www.youtube.com/@AWSUserGroupPeruOficial"
+                href="https://www.youtube.com/@awsparatodos9265?si=FzFls03xCG38znme"
               >
                 <StyledIcon icon={faYoutube} />
               </a>
 
-              <a target="blank" href="linkedin.com/company/awsusergroupperu/">
+              <a target="blank" href="">
                 <StyledIcon icon={faLinkedin} />
               </a>
             </div>
@@ -91,11 +94,15 @@ export const Footer = () => {
         </div>
       </div>
       <div className="terms">
-        <p className="terms-web">@ AWSparatodos2024. Todos los derechos rervados</p>
+        <p className="terms-web">
+          @ AWSparatodos2024. Todos los derechos rervados
+        </p>
         <div>
-          <a className="special-link_footer" href="r">Terminos de condiciones</a>
+          <a className="special-link_footer" href="r">
+            Terminos de condiciones
+          </a>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };

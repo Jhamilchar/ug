@@ -1,5 +1,8 @@
 import '../styles/about-section.css'
 import fade from '../images/fade.png'
+import {
+  Element
+} from "react-scroll";
 
 import { useRef } from 'react';
 import { useEffect } from 'react';
@@ -48,7 +51,7 @@ export const About = () => {
   }, []);
 
   return (
-    <div className="about-wrapper">
+    <Element name="section-about" className="about-wrapper">
       <div className="about-container">
       <img className='fade-1' src={fade} alt="" />
 
@@ -61,23 +64,13 @@ export const About = () => {
           <div className='position-description'>
             <p className='about-description'>Maybe you’re needing to blow off some serious steam with an all-night party, or wanting to impress someone special with a venue that’s a little more discreet and sophisticated. Either way, if you’re looking to dance the night away, check out one of the lively music venues, dance halls, and raucous haunts.</p>
           </div>
-          <button className='button-generic'>Únete ;)</button>
-          {/* <div className="contenedor-3d">
-            <img
-                id="imagen-3d"
-                ref={elRef}
-                src={image}
-            />
-          </div> */}
-          {/* {itemsAbout.map((item, index) => (
-            <div key={index} className="about-item">
-              <img src={item.img} alt={`Imagen ${index}`} />
-              <p className="item-title">{item.title}</p>
-              <p className="item-text">{item.text}</p>
-            </div>
-          ))} */}
+          <button className='button-generic'>
+            <a target='_blank' rel="noopener" href="https://www.meetup.com/es-ES/aws-para-todos/">
+              Únete ;)
+            </a>
+          </button>
         </div>
       </div>
-    </div>
+    </Element>
   )
 }
