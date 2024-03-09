@@ -93,9 +93,10 @@ const Nav = () => {
               >
                 <Link
                   to="section-about"
-                  spy={true}
+                  spy={true}  
                   smooth={true}
                   duration={500}
+                  offset={-100}
                   className="show-menu_items"
                   onClick={closeMenu}
                 >
@@ -111,6 +112,7 @@ const Nav = () => {
                   spy={true}
                   smooth={true}
                   duration={500}
+                  offset={-80}
                   className="show-menu_items"
                   onClick={closeMenu}>
                   Blog
@@ -124,6 +126,7 @@ const Nav = () => {
                   to="section-faq"
                   spy={true}
                   smooth={true}
+                  offset={-75}
                   duration={500}
                   className="show-menu_items"
                   onClick={closeMenu}

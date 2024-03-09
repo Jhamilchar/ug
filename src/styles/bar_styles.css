@@ -37,20 +37,3 @@
     margin-top: 6px;
     transform-origin: 0px 100%;
 }
-
-.active .line1__bars-menu {
-    transform: rotate(45deg)
-    translate(-2px, 1px);
-    width: 30px;
-}
-
-.active .line2__bars-menu {
-    transform: scaleY(0) !important;
-    margin-left: -30px;
-}
-
-.active .line3__bars-menu {
-    transform: rotate(-45deg)
-    translate(-4px, 2px);
-    width: 30px;
-}
