@@ -11,8 +11,16 @@
     padding: 3rem 0;
 }
 
-@media screen and (max-width: 768px) {
-  
+@media screen and (max-width: 1250px) {
+    .faq-question {
+        margin: 0 auto;
+    }
+    .faq-wrapp {
+        width: auto;
+    }
+    .faq-list {
+        margin: 0 3rem;
+    }
 }
 
 .info-faqs {

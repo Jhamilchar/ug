@@ -5,18 +5,20 @@
 }
 
 .blog-container {
-    width: 75rem;
     height: 37rem;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     padding-top: 3rem;
+    align-items: center;
+}
+
+.blog-container .wraper-container {
 }
 
 .bot-blog {
+    padding-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 2rem;
     position: relative;
 }
@@ -41,7 +43,7 @@
     z-index: 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     cursor: pointer;
 }
 
@@ -83,15 +85,43 @@
     height: 70rem;
 }
 
+@media screen and (max-width: 1250px) {
+    .cards-blog {
+        width: 33rem;
+    }
+    .title-blog {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .cards-blog {
+        width: 31rem;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .cards-blog {
+        width: 30rem !important;
+    }
+    .bot-blog {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .cards-blog {
+        width: 27rem !important;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     .title-blog {
         font-size: 2.3rem;
     }
-    .blog-container {
-        width: 82rem;
-    }
     .cards-blog {
-        width: 37.5rem;
+        width: 35rem !important;
     }
     .link-blog {
         font-size: 1.9rem;
@@ -101,29 +131,50 @@
     }
 }
 
+@media screen and (max-width: 931px) {
+    .cards-blog {
+        width: 28rem !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .bot-blog {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
     .title-blog {
         text-align: center;
         font-size: 3rem;
     }
     .blog-container {
-        width: 82rem;
-        height: 44rem;
+        height: 105rem;
         gap: 4rem;
     }
     .cards-blog {
-        width: 36.8rem;
-        height: 25rem;
+        width: 67rem !important;
+        height: 45rem;
+        justify-content: space-around;
     }
     .link-blog {
-        font-size: 1.9rem;
+        font-size: 25px;
     }
     .date-blog {
-        font-size: 1.5rem;
+        font-size: 18px;
+    }
+    .position-aws {
+        width: 250px;
+        height: 100px;
     }
     .fade-2 {
         width: 30rem;
         height: 80rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards-blog {
+        width: 64rem !important;
     }
 }
 
@@ -138,12 +189,11 @@
         gap: 3rem;
     }
     .blog-container {
-        width: 70rem;
         height: 113rem;
         gap: 4.5rem;
     }
     .cards-blog {
-        width: 64rem;
+        width: 60rem !important;
         height: 44rem;
     }
     .details {
@@ -171,15 +221,16 @@
         flex-direction: column;
         align-items: center;
         gap: 5.5rem;
+        padding-top: 5rem;
     }
     .blog-container {
         width: 100%;
-        height: 155rem;
+        height: 145rem;
         gap: 7rem;
     }
     .cards-blog {
-        width: 92rem;
-        height: 62rem;
+        width: 87rem !important;
+        height: 54rem;
     }
     .details {
         gap: 4rem;
@@ -190,7 +241,7 @@
         height: 24rem;
     }
     .link-blog {
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
     .date-blog {
         font-size: 3.2rem;
@@ -202,3 +253,9 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+    .cards-blog {
+        width: 86rem !important;
+        height: 54rem;
+    }
+}

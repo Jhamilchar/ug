@@ -43,7 +43,7 @@ a {
 
  @media screen and (max-width: 450px) {
      :root {
-         font-size: 4.34px;
+         font-size: 4.5px;
      }
 
      .wraper-nav {

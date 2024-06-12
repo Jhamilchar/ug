@@ -9,6 +9,7 @@ export const Blogs = () => {
   return (
     <Element name="section-blog" className="blog-wrapper">
       <div className="blog-container">
+        <div className="wraper-container">
         <div className="top-blog">
           <h2 className="title-blog">Ultimos eventos</h2>
         </div>
@@ -31,6 +32,7 @@ export const Blogs = () => {
               <p className="date-blog">Sep 11, 2023</p>
             </div>
           </div>
+        </div>
         </div>
       </div>
       <img className="fade-2" src={fade2} alt="" />

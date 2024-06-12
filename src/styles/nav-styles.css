@@ -193,6 +193,13 @@ background-color: rgba(0, 0, 0, 0.7)}
         font-size: 1.3rem;
 }
 
+@media screen and (max-width: 1250px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+}
+
 @media screen and (max-width: 768px) {
     .conf-link {
         font-size: 1.9rem;
@@ -240,13 +247,12 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 .nav-top.scrolled {
     position: fixed;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
     z-index: 9999;
     border-bottom: 1px solid gray;
     animation: slideInFromTop 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
 }
 
 .side-image {
@@ -270,9 +276,6 @@ background-color: rgba(0, 0, 0, 0.7)}
 }
 
 @media screen and (max-width: 600px) {
-    .side-image {
-        display: none;
-    }
     .nav-top.scrolled {
         height: auto;
     }
@@ -292,16 +295,15 @@ background-color: rgba(0, 0, 0, 0.7)}
 
 .wraper-nav-top {
     position: relative;
-    width: 75rem;
     display: flex;
     justify-content: space-between;
-    margin: 1.3rem auto;
+    margin: 1.3rem 40px;
     z-index: 9999;
 }
 
 @media screen and (max-width: 1024px) {
     .wraper-nav-top {
-        margin: 1.6rem auto;
+        margin: 1.6rem 40px;
         align-items: center;
     }
 }

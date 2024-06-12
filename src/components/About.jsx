@@ -53,6 +53,8 @@ export const About = () => {
   return (
     <Element name="section-about" className="about-wrapper">
       <div className="about-container">
+      <div>
+
       <img className='fade-1' src={fade} alt="" />
 
         <div className='top-container'>
@@ -62,14 +64,16 @@ export const About = () => {
         </div>
         <div className='bot-container'>
           <div className='position-description'>
-            <p className='about-description'>Maybe you’re needing to blow off some serious steam with an all-night party, or wanting to impress someone special with a venue that’s a little more discreet and sophisticated. Either way, if you’re looking to dance the night away, check out one of the lively music venues, dance halls, and raucous haunts.</p>
+            <p className='about-description'>AWS para Todos es una comunidad dedicada a enseñar y promover los beneficios de Amazon Web Services (AWS). Facilitamos el aprendizaje de AWS para personas de todos los niveles mediante la compartición de recursos y conocimientos. Nuestro espacio inclusivo permite a los miembros explorar ventajas como la escalabilidad, flexibilidad e innovación tecnológica.</p>
           </div>
           <button className='button-generic'>
-            <a target='_blank' rel="noopener" href="https://www.meetup.com/es-ES/aws-para-todos/">
+            <a target='blank' rel="noopener" href="https://www.meetup.com/es-ES/aws-para-todos/">
               Únete ;)
             </a>
           </button>
         </div>
+      </div>
+
       </div>
     </Element>
   )
