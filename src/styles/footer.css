@@ -130,10 +130,11 @@
 }
 
 @media screen and (max-width: 500px){
-    .footer-wrapper {
-        width: 70rem;
+    .footer-wrapper,
+    .terms {
+        width: 60rem !important;
         height: 52rem; 
-    }
+        }
     .logo-footer {
         width: 44rem;
         height: 20rem;
@@ -154,7 +155,6 @@
         font-size: 1.8rem;
     }
     .button-footer {
-        width: 100%;
         font-size: 2rem;
     }
     .redes {
@@ -168,6 +168,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         height: 10rem;
+        text-align: center;
     }
     .terms-web {
         font-size: 2rem;
@@ -177,9 +178,10 @@
     }
 }
 
-@media screen and (max-width: 430px){
-    .footer-wrapper {
-        width: 88rem;
+@media screen and (max-width: 450px){
+    .footer-wrapper,
+    .terms {
+        width: 85rem !important;
         height: 70rem; 
     }
     .logo-footer {
@@ -201,7 +203,6 @@
         font-size: 2.9rem;
     }
     .button-footer {
-        width: 100%;
         font-size: 2.9rem;
         padding: 4rem;
     }
