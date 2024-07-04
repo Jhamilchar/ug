@@ -158,7 +158,6 @@
     font-size: 3rem;
     color: #F7981D;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
     z-index: 2;
 }
 
@@ -178,9 +177,8 @@
 
 .about-description {
     font-size: 1.4rem;
-    max-width: 63%;
+    max-width: 85%;
     font-weight: 400;
-    font-family: 'Poppins';
     line-height: 2.2rem;
     text-align: center;
     color: white;

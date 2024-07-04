@@ -31,7 +31,6 @@
 .title-footer {
     font-size: 1.2rem;
     color: white ;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -61,7 +60,6 @@
     font-size: 1rem;
     background-color: #000c24;
     color: white;
-    font-family: 'Poppins', sans-serif;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -80,7 +78,6 @@
 
 .terms-web {
     color: white;
-    font-family: 'Poppins';
     font-size: .8rem;
 }
 

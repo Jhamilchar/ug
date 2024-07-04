@@ -1,7 +1,5 @@
-/* FAQ.css */
 .faq-section {
     background: linear-gradient(155deg, rgba(0,4,12,1) 40%, #1F3475 100%);
-
 }
 
 .faq-wrapp {
@@ -33,7 +31,6 @@
 .name-faqs {
     font-size: 2rem;
     color: #ffffff;
-    text-decoration: underline;
 }
 
 .learn-faqs {
@@ -44,13 +41,16 @@
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .faq-answer {
     max-height: 0;
-    transition: max-height 0.3s ease-out;
+    color: white;
+    overflow: hidden;
+    transition: max-height .3s ease-out, padding .3s ease-out; /* Añade una transición suave para max-height */
+    padding: 0 0.5rem;
 }
-
 
 /* .faq-item {
 } */
@@ -62,14 +62,14 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 6rem;
+    height: 5.5rem;
     text-align: left;
     border: none;
     color: white;
     font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    border-bottom: .5px solid gray;
+    border-bottom: 0.5px solid gray;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .faq-question:hover {
@@ -79,25 +79,17 @@
 .icon {
     font-size: 1.6rem;
     margin-left: 0.5rem;
+    transform: rotate(133deg); /* Ajusta el ángulo de rotación deseado */
+    transition: transform 0.3s ease-out;
 }
 
 .open {
-    transform: rotate(88deg);
-}
-
-.faq-answer {
-    padding: 0.5rem;
-    display: none;
-    color: white;
+    transform: rotate(315deg);
 }
 
 .faq-answer.show {
-    display: block;
-    text-align: justify;
-    font-size: .96rem;
-    padding-top: 1.3rem;
-    max-height: 62rem;
-    font-family: 'Poppins', sans-serif;
+    max-height: 50rem; /* Ajusta este valor según la longitud máxima esperada de tu contenido */
+    padding-top: .8rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -153,4 +145,3 @@
         font-size: 2.5rem !important;
     }
 }
-

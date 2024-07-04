@@ -11,7 +11,7 @@ export const Blogs = () => {
       <div className="blog-container">
         <div className="wraper-container">
         <div className="top-blog">
-          <h2 className="title-blog">Ultimos eventos</h2>
+          <h2 className="title-blog">Ultimas charlas</h2>
         </div>
         <div className="bot-blog">
           <div className="cards-blog">
