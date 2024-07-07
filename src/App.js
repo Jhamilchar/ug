@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { FaqsSection } from "./components/FaqsSection.jsx";
 import { Blogs } from "./components/Blogs.jsx";
+import Parameters from "./components/Parameters.jsx";
 import "../src/index.css";
 import "../src/styles/font.css";
 import { Footer } from "./components/Footer";
@@ -18,6 +19,7 @@ const App = () => {
           element={
             <React.Fragment>
               <Navigation />
+              <Parameters />
               <About />
               <Blogs />
               <FaqsSection />
