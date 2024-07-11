@@ -223,6 +223,7 @@
         width: 100%;
         height: 145rem;
         gap: 7rem;
+        padding: 9rem 0;
     }
     .cards-blog {
         width: 87rem !important;

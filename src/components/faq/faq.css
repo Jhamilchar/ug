@@ -122,6 +122,9 @@
     .faq-answer.show {
         font-size: 1.8rem !important;
     }
+    .faq-wrapp {
+        padding: 10rem 0;
+    }
 }
 
 @media screen and (max-width: 430px) {

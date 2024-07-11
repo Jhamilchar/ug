@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 1024px) {
     .about-description {
-        max-width: 70% !important;
+        max-width: 85% !important;
         font-size: 1.6rem !important;
         line-height: 2.5rem !important;
     }
@@ -70,8 +70,8 @@
         padding-bottom: 2rem;
     }
     .about-description {
-        max-width: 90% !important;
-        font-size: 2.4rem !important;
+        max-width: 92% !important;
+        font-size: 2.2rem !important;
         line-height: 4rem !important;
     }
     .button-generic {
@@ -82,7 +82,7 @@
 @media screen and (max-width: 500px) {
     .about-container {
         width: 60rem !important;
-        height: 70rem !important;
+        height: 60rem !important;
         gap: .4rem;
     }
     .about-description {
@@ -95,7 +95,7 @@
         font-size: 3.4rem !important;
     }
     .about-description {
-        max-width: 75% !important;
+        max-width: 88% !important;
         font-size: 2.7rem !important;
         line-height: 4.4rem !important;
     }
@@ -114,11 +114,11 @@
         font-size: 3.5rem;
     }
     .about-container {
-        height: 125rem !important;
+        height: 90rem !important;
         gap: 3.5rem;
     }
     .about-description {
-        max-width: 80% !important;
+        max-width: 92% !important;
     }
     .top-container {
         height: 6rem !important;

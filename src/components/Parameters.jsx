@@ -11,7 +11,6 @@ const Parameters = () => {
                 Mercado Libre frees developers' minds to focus on their mission
                 with GitHub.
               </p>
-              <span>Read customer story</span>
             </div>
             <div className="statistics">
               <div className="percentages">

@@ -5,7 +5,6 @@
 .parameters-wrap {
     width: 75rem;
     margin: 0 auto;
-    height: 38rem;
     color: white;
     display: flex;
     padding: 4rem 0;
@@ -13,13 +12,15 @@
 
 .metricas {
   width: 60%;
+  gap: 2.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .title-parameters {
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-right: 9rem;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .big-letter {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .detail-percentage {
@@ -37,11 +38,11 @@
 }
 
 .percentages {
-  width: 227px;
-  height: 200px;
+  width: 14.1875rem;
+  height: 12.5rem;
   padding: 2rem;
   background-color: #0c0f14;
-  border-radius: 20px; /* Ajusta este valor para redondear las esquinas */
+  border-radius: 1.25rem; /* Ajusta este valor para redondear las esquinas */
   position: relative; /* Necesario para posicionar correctamente el pseudo-elemento */
   display: flex;
   flex-direction: column;
@@ -55,7 +56,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 20px; /* Debe coincidir con el border-radius del div */
+  border-radius: 1.25rem; /* Debe coincidir con el border-radius del div */
   padding: 2px; /* Ajusta este valor para el grosor del borde */
   background: linear-gradient(90deg, #392E6E, #184051, #392E6E, #184051);
   -webkit-mask: 
@@ -71,7 +72,7 @@
 
 .solutions {
     position: relative;
-    padding-left: 30px;
+    padding-left: 1.875rem;
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -84,9 +85,9 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 15px;
+    left: 0.9375rem;
     width: 2px;
-    background: #333;
+    background: #183F51;
   }
 
   .solutions-containers {
@@ -98,22 +99,96 @@
   
   .solutions-containers h2 {
     position: relative;
-    padding-left: 10px;
+    padding-left: 1.6rem;
   }
   
   .solutions-containers h2::before {
     content: '';
     position: absolute;
-    left: -30px;
+    left: -1.625rem;
     top: 50%;
     transform: translateY(-50%);
-    width: 10px;
-    height: 10px;
-    background: #333;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: #183F51;
     border-radius: 50%;
   }
   
 
   .solutions-containers p {
     color: #8b949e;
+  }
+
+  @media screen and (max-width: 1215px) {
+    .parameters-wrap {
+      gap: 2rem;
+    }
+    .metricas {
+      width: inherit;
+    }
+    .solutions {
+      width: inherit;
+    }
+  }
+  
+
+  @media screen and (max-width: 910px) {
+    .parameters-wrap{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+      width: 62rem;
+    }
+
+    .metricas {
+      width: 100%;
+    }
+
+    .solutions {
+      width: 100%;
+    }
+    .title-parameters{
+      font-size: 2.7rem;
+      padding-right: inherit;
+    }
+    .big-letter {
+      font-size: 3rem;
+    }
+    .detail-percentage {
+      font-size: 1.2rem;
+    }
+    .solutions-containers h2 {
+      font-size: 1.8rem;
+    }
+    .solutions-containers p {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .parameters-wrap {
+      width: 77%;
+      gap: 7rem;
+      padding: 10rem 0;
+    }
+    .title-parameters{
+      font-size: 3.9rem;
+    }
+    .percentages {
+      width: 20rem;
+      height: 18rem;
+    }
+    .big-letter {
+      font-size: 3.5rem;
+    }
+    .detail-percentage {
+      font-size: 1.9rem;
+    }
+    .solutions-containers h2 {
+      font-size: 3.5rem;
+    }
+    .solutions-containers p {
+      font-size: 2.1rem;
+    }
   }
