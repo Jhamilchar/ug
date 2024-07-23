@@ -176,3 +176,10 @@
     font-size: 3.4rem;
   }
 }
+
+@media screen and (max-width: 425px) {
+  .image-each-small{
+    width: 70rem;
+    height: 70rem;
+  }
+}
