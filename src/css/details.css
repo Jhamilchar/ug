@@ -90,6 +90,10 @@
   color: #1e7ba5;
 }
 
+.display {
+  display: none;
+}
+
 @media screen and (max-width: 1024px) {
   .background-details {
     background: radial-gradient(
@@ -104,9 +108,10 @@
     display: none;
   }
 
-  .new-details {
+  .display{
     text-align: center;
     font-size: 2.4rem;
+    display: block;
   }
 
   .responsive-pautas {
@@ -136,5 +141,19 @@
 @media screen and (max-width: 768px) {
   .responsive-pautas {
     grid-template-columns: 1fr;
+  }
+  .display {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+  .pauta-item {
+    margin-top: 5rem;
+  }
+  .pauta-text {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .image-each-small{
+    width: 80%;
   }
 }

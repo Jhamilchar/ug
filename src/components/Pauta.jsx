@@ -58,7 +58,7 @@ const Details = () => {
           <img className="image-each" width={600} src={currentImage} alt="" />
         </div>
       </div>
-      <p className="new-details">
+      <p className="new-details display">
           <span className="autority">Somos la autoridad en </span>
           escalar la educación en línea en América Latina
         </p>
