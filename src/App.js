@@ -8,6 +8,7 @@ import "../src/index.css";
 import "../src/styles/font.css";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About.jsx";
+import Pauta from "./components/Pauta.jsx";
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
               <Parameters />
               <About />
               <Blogs />
+              <Pauta />
               <FaqsSection />
               <Footer />
             </React.Fragment>

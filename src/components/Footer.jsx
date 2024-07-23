@@ -55,15 +55,19 @@ export const Footer = () => {
 
           <div className="redes">
             <div className="container-button">
-                <a target="_blank" href="mailto:nefi@awsparatodos.com" className="button-footer">
-                  C o n t a c t a m e
-                  <span>
-                    <FontAwesomeIcon
-                      className="icon-special"
-                      icon={faArrowRight}
-                    />
-                  </span>
-                </a>
+              <a
+                target="_blank"
+                href="mailto:nefi@awsparatodos.com"
+                className="button-footer"
+              >
+                C o n t a c t a m e
+                <span>
+                  <FontAwesomeIcon
+                    className="icon-special"
+                    icon={faArrowRight}
+                  />
+                </span>
+              </a>
             </div>
 
             <div className="social">
@@ -79,7 +83,7 @@ export const Footer = () => {
                 <StyledIcon icon={faTwitter} />
               </a>
 
-              <a 
+              <a
                 target="blank"
                 href="https://www.youtube.com/@awsparatodos9265?si=FzFls03xCG38znme"
               >
