@@ -80,3 +80,21 @@
       }
   
 }
+
+@media screen and (max-width: 450px) {
+    .wrap-parametric {
+        width: 77rem;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .wrap-parametric {
+        width: 80rem;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    .wrap-parametric {
+        width: 71rem;
+      }
+}
