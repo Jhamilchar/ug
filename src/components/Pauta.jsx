@@ -23,12 +23,10 @@ const Details = () => {
       text: "Inteligencia artificial y comunidad que responde tus dudas",
       image: escaleras,
     },
-    {
-      text: "Descarga las clases a tu teléfono y aprende sin Internet",
-      image: portada1,
-    },
-    { text: "Mide el progreso de tu empresa", image: portada12 },
-    { text: "Organiza el aprendizaje de tu equipo", image: portada1 },
+    // {
+    //   text: "Descarga las clases a tu teléfono y aprende sin Internet",
+    //   image: portada1,
+    // },
   ];
 
   return (

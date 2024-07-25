@@ -1,0 +1,82 @@
+.wrap {
+  background-color: #00040c;
+}
+
+.wrap-parametric {
+  width: 75rem;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  padding: 4rem 0;
+  position: relative;
+  align-items: center;
+}
+
+.wrap-parametric::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(
+    transparent,
+    #33b3ae,
+    rgb(51, 179, 174),
+    transparent
+  );
+}
+
+.border-data {
+  border: 1px solid #33b3ae;
+  font-size: 0.75rem;
+  color: #33b3ae;
+  padding: 0 8px;
+  border-radius: 10px;
+}
+
+.primary-data {
+  color: #33b3ae;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.sub-data {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrap-parametric {
+    width: 63rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .border-data {
+    font-size: 1rem;
+  }
+  .primary-data {
+    font-size: 4.7rem;
+  }
+  .sub-data {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    .wrap-parametric {
+        width: 63rem;
+      }
+    .border-data {
+        font-size: 1.3rem;
+      }
+      .primary-data {
+        font-size: 5.2rem;
+      }
+      .sub-data {
+        font-size: 2rem;
+      }
+  
+}

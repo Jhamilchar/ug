@@ -58,7 +58,7 @@
   bottom: 0;
   border-radius: 1.25rem; /* Debe coincidir con el border-radius del div */
   padding: 2px; /* Ajusta este valor para el grosor del borde */
-  background: linear-gradient(90deg, #392E6E, #184051, #392E6E, #184051);
+  background: linear-gradient(90deg, #392E6E, #33b3ae, #392E6E, #33b3ae);
   -webkit-mask: 
     linear-gradient(#fff 0 0) content-box, 
     linear-gradient(#fff 0 0);
@@ -87,7 +87,7 @@
     bottom: 0;
     left: 0.9375rem;
     width: 2px;
-    background: #183F51;
+    background: #33b3ae;
   }
 
   .solutions-containers {
@@ -110,7 +110,7 @@
     transform: translateY(-50%);
     width: 1.6rem;
     height: 1.6rem;
-    background: #183F51;
+    background: #33b3ae;
     border-radius: 50%;
   }
   
@@ -170,7 +170,7 @@
     .parameters-wrap {
       width: 77%;
       gap: 7rem;
-      padding: 10rem 0;
+      padding: 5rem 0;
     }
     .title-parameters{
       font-size: 3.9rem;
