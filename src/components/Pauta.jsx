@@ -13,14 +13,14 @@ const Details = () => {
   };
 
   const pautas = [
-    { text: "Aprende algo nuevo cada 5 minutos", image: test },
+    { text: "Aprende de manera eficiente con recursos de fácil acceso", image: test },
     {
-      text: "Rutas profesionales te guían de principiante a profesional",
+      text: "Conecta con expertos y compañeros para resolver tus inquietudes.",
       image: portada1,
     },
-    { text: "Pon a prueba tu progreso de forma interactiva", image: portada12 },
+    { text: "Mide y mejora tu progreso con herramientas interactivas.", image: portada12 },
     {
-      text: "Inteligencia artificial y comunidad que responde tus dudas",
+      text: "Liderando el aprendizaje digital en nuestra comunidad.",
       image: escaleras,
     },
     // {
@@ -35,10 +35,10 @@ const Details = () => {
         <div className="content">
           <p className="new-details">
             <span className="autority">
-              Somos la autoridad en <br />
+            Impulsando la Educación <br />
             </span>
-            escalar la educación en <br />
-            línea en América Latina
+            en Línea <br />
+            para Todos
           </p>
           <div className="pauta">
             {pautas.map((pauta, index) => (

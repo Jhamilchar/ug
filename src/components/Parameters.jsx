@@ -8,48 +8,41 @@ const Parameters = () => {
           <div className="metricas">
             <div className="title-parameters">
               <p>
-                Mercado Libre frees developers' minds to focus on their mission
-                with GitHub.
+                AWS impulsa a los desarrolladores a innovar más rápido con herramientas nativas de la nube.
               </p>
             </div>
             <div className="statistics">
               <div className="percentages">
-                <p className="big-letter">-50%</p>
+                <p className="big-letter">-47%</p>
                 <p className="detail-percentage">
-                  Reduced time by writing code with GitHub Copilot
+                  Reducción en costos operativos tras migrar a AWS
                 </p>
               </div>
               <div className="percentages">
-                <p className="big-letter">100,000</p>
+                <p className="big-letter">+190</p>
                 <p className="detail-percentage">
-                  Reduced time by writing code with GitHub Copilot
+                  Países que utilizan AWS para potenciar su infraestructura
                 </p>
               </div>
             </div>
           </div>
           <div className="solutions">
             <div className="solutions-containers">
-              <h2>Problem</h2>
+              <h2>Dificultades para Encontrar Mentores</h2>
               <p>
-                Mercado Libre developer platform team needed secure DevOps
-                tooling that would allow its developers to be more efficient and
-                allow them to focus more on providing value to users.
+              Los nuevos miembros de la comunidad de AWS tenían dificultades para encontrar mentores experimentados que pudieran guiarlos en sus proyectos y carreras en la nube.
               </p>
             </div>
             <div className="solutions-containers">
-              <h2>Solution</h2>
+              <h2>Programa de Mentores AWS</h2>
               <p>
-                Mercado Libre uses GitHub to automate deployment, security
-                tests, and repetitive tasks to free developers to spend more
-                time on high-value, rewarding work.
+              Se estableció un programa de mentores dentro de la comunidad de AWS, conectando a nuevos miembros con expertos experimentados. Este programa ha proporcionado orientación personalizada y ha acelerado el aprendizaje y desarrollo profesional de los participantes.
               </p>
             </div>
             <div className="solutions-containers">
-              <h2>Solution</h2>
+              <h2>Falta de Networking</h2>
               <p>
-                Mercado Libre uses GitHub to automate deployment, security
-                tests, and repetitive tasks to free developers to spend more
-                time on high-value, rewarding work.
+              Los miembros de la comunidad de AWS no tenían suficientes oportunidades para conectarse con otros profesionales y expertos en la nube, limitando la colaboración y el intercambio de experiencias.
               </p>
             </div>
           </div>

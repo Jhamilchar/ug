@@ -141,13 +141,13 @@ const Metric = () => {
           </svg>
           <div className="data">
             <div>
-              <span className="border-data">Did You Know</span>
+              <span className="border-data">Conectando y Creciendo Juntos</span>
             </div>
             <div>
-              <h2 className="primary-data">7x faster</h2>
+              <h2 className="primary-data">Impulsando la Comunidad AWS hacia Nuevas Alturas</h2>
             </div>
             <div>
-              <p className="sub-data">vulnerability fixes with GitHub</p>
+              <p className="sub-data">¡Únete y lleva tu carrera en AWS al siguiente nivel!</p>
             </div>
           </div>
         </div>
