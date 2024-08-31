@@ -102,9 +102,9 @@ export const Footer = () => {
           @ AWSparatodos2024. Todos los derechos rervados
         </p>
         <div>
-          <a className="special-link_footer" href="r">
+          {/* <a className="special-link_footer" href="r">
             Terminos de condiciones
-          </a>
+          </a> */}
         </div>
       </div>
     </Element>

@@ -1,32 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/details.css";
-import test from "../images/test.png";
-import portada1 from "../images/portada1.png";
-import portada12 from "../images/portada12.png";
-import escaleras from "../images/escaleras.jpg";
 
 const Details = () => {
-  const [currentImage, setCurrentImage] = useState(test);
-
-  const handleMouseEnter = (image) => {
-    setCurrentImage(image);
-  };
-
   const pautas = [
-    { text: "Aprende de manera eficiente con recursos de fácil acceso", image: test },
     {
-      text: "Conecta con expertos y compañeros para resolver tus inquietudes.",
-      image: portada1,
+      text: "¿Qué es AWS para Todos?",
+      answer: "AWS para Todos es una comunidad dedicada a promover la educación sobre Amazon Web Services en América Latina.",
     },
-    { text: "Mide y mejora tu progreso con herramientas interactivas.", image: portada12 },
     {
-      text: "Liderando el aprendizaje digital en nuestra comunidad.",
-      image: escaleras,
+      text: "¿Cómo puedo unirme a AWS para Todos?",
+      answer: "Puedes unirte visitando nuestra página web y siguiendo las instrucciones en la sección 'Únete'.",
     },
-    // {
-    //   text: "Descarga las clases a tu teléfono y aprende sin Internet",
-    //   image: portada1,
-    // },
+    {
+      text: "¿Cuáles son los beneficios de unirse a la comunidad?",
+      answer: "Al unirte, accedes a recursos exclusivos, talleres, y una red de profesionales en la nube.",
+    },
+    {
+      text: "¿Hay algún requisito para unirse a la comunidad?",
+      answer: "No hay requisitos previos. La comunidad está abierta a todos los interesados en aprender sobre AWS.",
+    },
   ];
 
   return (
@@ -34,47 +26,26 @@ const Details = () => {
       <div className="wrapper-details">
         <div className="content">
           <p className="new-details">
-            <span className="autority">
-            Impulsando la Educación <br />
-            </span>
+            <span className="autority">Impulsando la Educación <br /></span>
             en Línea <br />
             para Todos
           </p>
           <div className="pauta">
             {pautas.map((pauta, index) => (
-              <p
-                key={index}
-                className="pauta-text"
-                onMouseEnter={() => handleMouseEnter(pauta.image)}
-              >
-                {pauta.text}
-              </p>
+              <div key={index} className="pauta-item">
+                <p className="pauta-text">{pauta.text}</p>
+                <div className="answer-box show">
+                  <p className="answer-text">{pauta.answer}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
-        <div className="image-referencial">
-          <img className="image-each" width={600} src={currentImage} alt="" />
-        </div>
       </div>
       <p className="new-details display">
-          <span className="autority">Somos la autoridad en </span>
-          escalar la educación en línea en América Latina
-        </p>
-      <div className="responsive-pautas">
-        {pautas.map((pauta, index) => (
-          <div key={index} className="pauta-item">
-            <p className="pauta-text">{pauta.text}</p>
-            <div className="image-referencial-small">
-              <img
-                className="image-each-small"
-                width={600}
-                src={pauta.image}
-                alt=""
-              />
-            </div>
-          </div>
-        ))}
-      </div>
+        <span className="autority">Somos la autoridad en </span>
+        escalar la educación en línea en América Latina
+      </p>
     </div>
   );
 };

@@ -144,10 +144,10 @@ const Metric = () => {
               <span className="border-data">Conectando y Creciendo Juntos</span>
             </div>
             <div>
-              <h2 className="primary-data">Impulsando la Comunidad AWS hacia Nuevas Alturas</h2>
+              <h2 className="primary-data">Impulsando la Comunidad AWS para todos hacia Nuevas Alturas</h2>
             </div>
             <div>
-              <p className="sub-data">¡Únete y lleva tu carrera en AWS al siguiente nivel!</p>
+              <p className="sub-data">¡Únete y lleva tu carrera en AWS para todos al siguiente nivel!</p>
             </div>
           </div>
         </div>

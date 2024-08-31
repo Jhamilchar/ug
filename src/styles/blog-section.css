@@ -5,11 +5,11 @@
 }
 
 .blog-container {
-    height: 37rem;
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
     align-items: center;
+    padding: 3rem 0;
 }
 
 .bot-blog {

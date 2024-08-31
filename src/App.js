@@ -26,7 +26,7 @@ const App = () => {
               <About />
               <Blogs />
               <Pauta />
-              <FaqsSection />
+              {/* <FaqsSection /> */}
               <Footer />
             </React.Fragment>
           }

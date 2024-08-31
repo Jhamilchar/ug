@@ -30,19 +30,19 @@ const Parameters = () => {
             <div className="solutions-containers">
               <h2>Dificultades para Encontrar Mentores</h2>
               <p>
-              Los nuevos miembros de la comunidad de AWS tenían dificultades para encontrar mentores experimentados que pudieran guiarlos en sus proyectos y carreras en la nube.
+              Los nuevos miembros de la comunidad de AWS para todos tenían dificultades para encontrar mentores experimentados que pudieran guiarlos en sus proyectos y carreras en la nube.
               </p>
             </div>
             <div className="solutions-containers">
-              <h2>Programa de Mentores AWS</h2>
+              <h2>Programa de Mentores AWS para todos</h2>
               <p>
-              Se estableció un programa de mentores dentro de la comunidad de AWS, conectando a nuevos miembros con expertos experimentados. Este programa ha proporcionado orientación personalizada y ha acelerado el aprendizaje y desarrollo profesional de los participantes.
+              Se estableció un programa de mentores dentro de la comunidad de AWS para todos, conectando a nuevos miembros con expertos experimentados. Este programa ha proporcionado orientación personalizada y ha acelerado el aprendizaje y desarrollo profesional de los participantes.
               </p>
             </div>
             <div className="solutions-containers">
               <h2>Falta de Networking</h2>
               <p>
-              Los miembros de la comunidad de AWS no tenían suficientes oportunidades para conectarse con otros profesionales y expertos en la nube, limitando la colaboración y el intercambio de experiencias.
+              Los miembros de la comunidad de AWS para todos no tenían suficientes oportunidades para conectarse con otros profesionales y expertos en la nube, limitando la colaboración y el intercambio de experiencias.
               </p>
             </div>
           </div>
