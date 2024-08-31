@@ -2,31 +2,33 @@ import React, { useState } from "react";
 import "../css/details.css";
 
 const Details = () => {
-  const [currentAnswer, setCurrentAnswer] = useState("");
-  const [showAnswer, setShowAnswer] = useState(false);
+  // Inicializar con la respuesta de la primera pregunta
+  const [currentAnswer, setCurrentAnswer] = useState("Este espacio es para poder aprender de cloud computing AWS con charlas, talleres, videos cortos para no perder el enfoque de lo que queremos aprender.");
+  const [showAnswer, setShowAnswer] = useState(true);
+  const [activeIndex, setActiveIndex] = useState(0); // Índice activo inicialmente
 
-  const handleMouseEnter = (answer) => {
+  const handleMouseEnter = (answer, index) => {
     setCurrentAnswer(answer);
     setShowAnswer(true); // Muestra la caja con la animación
+    setActiveIndex(index); // Actualiza el índice activo
   };
-
 
   const pautas = [
     { 
       text: "¿Qué es AWS para Todos?", 
-      answer: "AWS para Todos es una comunidad dedicada a promover la educación sobre Amazon Web Services en América Latina." 
+      answer: "Este espacio es para poder aprender de cloud computing AWS con charlas, talleres, videos cortos para no perder el enfoque de lo que queremos aprender." 
     },
     {
-      text: "¿Cómo puedo unirme a AWS para Todos?",
-      answer: "Puedes unirte visitando nuestra página web y siguiendo las instrucciones en la sección 'Únete'.",
+      text: "¿Cual es el objetivo de aws para todos?",
+      answer: "El objetivo es que toda persona que quiera entender, aprender, curiosear o incluso cambiar de carrera, incorpore conocimientos generales y específicos sobre la nube de Amazon Web Services (AWS) con el contenido que le brindaremos.",
     },
     { 
-      text: "¿Cuáles son los beneficios de unirse a la comunidad?", 
-      answer: "Al unirte, accedes a recursos exclusivos, talleres, y una red de profesionales en la nube." 
+      text: "¿Como llegamos a varias persona?", 
+      answer: "Nos tomaremos un tiempo para poder explicar palabras o términos que no son comunes para las personas que recien estén iniciando en el mundo de la tecnología." 
     },
     {
-      text: "¿Hay algún requisito para unirse a la comunidad?",
-      answer: "No hay requisitos previos. La comunidad está abierta a todos los interesados en aprender sobre AWS.",
+      text: "¿Como unirme?",
+      answer: "Siguiendo nuestras pagina web y nuestras redes sociales asistiendo a nuestros evento presenciales y virtuales",
     },
   ];
 
@@ -36,17 +38,15 @@ const Details = () => {
         <div className="content">
           <p className="new-details">
             <span className="autority">
-            Impulsando la Educación <br />
+            FAQs
             </span>
-            en Línea <br />
-            para Todos
           </p>
           <div className="pauta">
             {pautas.map((pauta, index) => (
               <p
                 key={index}
-                className="pauta-text"
-                onMouseEnter={() => handleMouseEnter(pauta.answer)}
+                className={`pauta-text ${activeIndex === index ? "active" : ""}`} // Agrega la clase "active" si el índice es el activo
+                onMouseEnter={() => handleMouseEnter(pauta.answer, index)}
               >
                 {pauta.text}
               </p>
