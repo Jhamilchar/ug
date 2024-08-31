@@ -10,6 +10,7 @@ import "../src/styles/font.css";
 import { Footer } from "./components/Footer";
 import { About } from "./components/About.jsx";
 import Pauta from "./components/Pauta.jsx";
+import Pauta2 from "./components/Pauta2.jsx";
 
 const App = () => {
 
@@ -22,10 +23,11 @@ const App = () => {
             <React.Fragment>
               <Navigation />
               <Parameters />
-              <Metric />
               <About />
+              <Metric />
               <Blogs />
               <Pauta />
+              <Pauta2 />
               {/* <FaqsSection /> */}
               <Footer />
             </React.Fragment>

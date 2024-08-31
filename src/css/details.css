@@ -20,10 +20,6 @@
   width: 50%;
 }
 
-.text-referencial {
-  width: 50%;
-}
-
 .new-details {
   font-size: 2rem;
   line-height: 2.1875rem;
@@ -59,17 +55,19 @@
   font-weight: 600;
   font-size: 1.125rem;
   font-weight: 400;
-  transition: color 0.3s ease;
 }
 
-.pauta-text:hover,
-.pauta-text.active {
+.pauta-text:hover {
   color: white;
 }
 
 .image-each {
   width: 36.25rem;
   height: 32.5rem;
+}
+
+.responsive-pautas {
+  display: none;
 }
 
 .pauta-item {
@@ -97,63 +95,74 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .background-details {
+    background: radial-gradient(
+      62.22% 14% at 50% 0,
+      #1a6a8fc4 0,
+      rgba(0, 124, 71, 0) 100%
+    );
+    background-color: #00040c;
+    padding: 24px;
+  }
   .wrapper-details {
-    flex-direction: column; /* Cambiar a columna para apilar elementos */
-    align-items: center;
-    width: 100%; /* Asegurar que el contenedor se ajuste */
+    display: none;
   }
 
-  .content, .text-referencial {
-    width: 100%;
+  .display{
+    text-align: center;
+    font-size: 2.4rem;
+    display: block;
   }
 
-  .pauta {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas */
+  .responsive-pautas {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .answer-box {
-    width: 100%;
-    margin-top: 1rem; /* Para espacio entre respuestas */
-  }
-  
-  .answer-box.show {
-    animation: fadeInScale 0.4s ease forwards;
-  }
-}
-
-
-@media screen and (max-width: 768px) {
-  .wrapper-details {
+  .pauta-item {
     flex-direction: column;
-    padding: 2rem;
-  }
-
-  .pauta {
-    grid-template-columns: 1fr; /* Una columna */
-  }
-
-  .answer-box {
-    width: 100%;
+    align-items: flex-start;
   }
 
   .pauta-text {
     font-size: 1.5rem;
+    margin-top: 3rem;
+    color: white;
     text-align: center;
   }
-}
 
-@media screen and (max-width: 425px) {
-  .pauta-text {
-    font-size: 1.2rem;
-  }
-  
-  .answer-box {
+  .image-referencial-small {
     width: 100%;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .responsive-pautas {
+    grid-template-columns: 1fr;
+  }
+  .display {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+  .pauta-item {
+    margin-top: 5rem;
+  }
+  .pauta-text {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+  .image-referencial-small {
+    display: flex;
+    justify-content: center;
+  }
+  .image-each-small{
+    width: 340px;
+    height: 340px;
+  }
+}
 
 @media screen and (max-width: 625px) {
   .responsive-pautas {
@@ -174,132 +183,6 @@
     height: 70rem;
   }
 }
-
-.background-details {
-  background-color: #00040c;
-}
-
-.wrapper-details {
-  display: flex;
-  align-items: center;
-  width: 75rem;
-  margin: 0 auto;
-  padding: 7rem 0;
-}
-
-.content {
-  width: 100%;
-}
-
-.new-details {
-  font-size: 2rem;
-  line-height: 2.1875rem;
-  color: white;
-}
-
-.pauta {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
-.pauta-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.pauta-text {
-  color: rgb(127, 127, 127);
-  font-weight: 600;
-  font-size: 1.125rem;
-  transition: color 0.3s ease;
-}
-
-.answer-box {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: opacity 0.4s ease, transform 0.4s ease;
-}
-
-.answer-box.show {
-  opacity: 1;
-  transform: scale(1);
-  animation: fadeInScale 0.4s ease forwards;
-}
-
-.answer-text {
-  color: white;
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-
-.display {
-  display: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .wrapper-details {
-  }
-
-  .pauta {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .display {
-    text-align: center;
-    font-size: 2.4rem;
-    display: block;
-  }
-
-  .pauta-text {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .pauta {
-    grid-template-columns: 1fr;
-  }
-
-  .display {
-    font-size: 3rem;
-    line-height: 3.7rem;
-  }
-
-  .pauta-text {
-    font-size: 2rem;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  .pauta-item {
-    align-items: center;
-  }
-
-  .answer-box {
-    width: 100%;
-    text-align: center;
-  }
-
-  .pauta-text {
-    font-size: 2.5rem;
-  }
-}
-
-@keyframes fadeInScale {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 
 @keyframes fadeInScale {
   0% {
@@ -327,6 +210,6 @@
 
 .answer-text {
   color: white;
-  font-size: 1.125rem;
+  font-size: 1.2;
   font-weight: 400;
 }

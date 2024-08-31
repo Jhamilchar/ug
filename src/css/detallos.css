@@ -1,0 +1,125 @@
+.background-details {
+  background-color: #00040c;
+}
+
+.wrapper-details {
+  display: flex;
+  align-items: center;
+  width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.content {
+  width: 100%;
+}
+
+.new-details {
+  font-size: 2rem;
+  line-height: 2.1875rem;
+  color: white;
+}
+
+.pauta2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.pauta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pauta-text {
+  color: rgb(127, 127, 127);
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: color 0.3s ease;
+}
+
+.answer-box {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.answer-box.show {
+  opacity: 1;
+  transform: scale(1);
+  animation: fadeInScale 0.4s ease forwards;
+}
+
+.answer-text {
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.display {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper-details {
+    width: 100%;
+  }
+
+  .pauta {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .display {
+    text-align: center;
+    font-size: 2.4rem;
+    display: block;
+  }
+
+  .pauta-text {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pauta {
+    grid-template-columns: 1fr;
+  }
+
+  .display {
+    font-size: 3rem;
+    line-height: 3.7rem;
+  }
+
+  .pauta-text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pauta-item {
+    align-items: center;
+  }
+
+  .answer-box {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pauta-text {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
