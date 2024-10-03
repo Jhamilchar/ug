@@ -609,7 +609,7 @@ background-color: rgba(0, 0, 0, 0.7)}
     }
     .show-menu_wrapper {
         padding-top: 0 !important;
-        row-gap: 18rem !important;
+        row-gap: 8rem !important;
         width: 100%;
     }
     .show-menu_wrapper li{
@@ -619,7 +619,7 @@ background-color: rgba(0, 0, 0, 0.7)}
         font-size: 5.1rem !important;
     }
     .wrapper-container {
-        gap: 5.9rem;
+        gap: 12rem;
     }
 }
 

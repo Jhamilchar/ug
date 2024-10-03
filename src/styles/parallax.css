@@ -32,6 +32,7 @@
     z-index: 3;
     transition: ease-in .3s;
     font-weight: 600;     
+    text-align: center;
 }
 
 .special-text-2 {
@@ -49,9 +50,9 @@
     background-attachment: fixed;
     background-size: cover;
     -webkit-background-position: bottom;
-    background-position: center;
+    background-position: 66;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 1;
 }
@@ -70,6 +71,9 @@
 }
 
 @media screen and (max-width: 600px){
+    .mountains {
+        background-attachment: scroll !important; /* Desactiva 'fixed' en móviles */
+    }
     .special-text {
         font-size: 30px !important;
     }
