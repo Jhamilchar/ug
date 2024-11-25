@@ -1,13 +1,13 @@
 .wrap {
-  background-color: #00040C;
+  background-color: #00040c;
 }
 
 .parameters-wrap {
-    width: 75rem;
-    margin: 0 auto;
-    color: white;
-    display: flex;
-    padding: 4rem 0;
+  width: 75rem;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  padding: 4rem 0;
 }
 
 .metricas {
@@ -58,10 +58,8 @@
   bottom: 0;
   border-radius: 1.25rem; /* Debe coincidir con el border-radius del div */
   padding: 2px; /* Ajusta este valor para el grosor del borde */
-  background: linear-gradient(90deg, #392E6E, #33b3ae, #392E6E, #33b3ae);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
+  background: linear-gradient(90deg, #392e6e, #33b3ae, #392e6e, #33b3ae);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: exclude; /* Para soportar Firefox */
 }
@@ -71,124 +69,139 @@
 }
 
 .solutions {
-    position: relative;
-    padding-left: 1.875rem;
-    width: 40%;
+  position: relative;
+  padding-left: 1.875rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+  z-index: 2;
+}
+
+.solutions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0.9375rem;
+  width: 2px;
+  background: #33b3ae;
+}
+
+.solutions-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.solutions-containers h2 {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.solutions-containers h2::before {
+  content: "";
+  position: absolute;
+  left: -1.625rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #33b3ae;
+  border-radius: 50%;
+}
+
+.solutions-containers p {
+  color: #8b949e;
+}
+
+@media screen and (max-width: 1215px) {
+  .parameters-wrap {
+    gap: 2rem;
+  }
+  .metricas {
+    width: inherit;
+  }
+  .solutions {
+    width: inherit;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .parameters-wrap {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 62rem;
   }
-  
-  .solutions::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0.9375rem;
-    width: 2px;
-    background: #33b3ae;
+
+  .metricas {
+    width: 100%;
+  }
+
+  .solutions {
+    width: 100%;
+  }
+  .title-parameters {
+    font-size: 2.7rem;
+    padding-right: inherit;
+  }
+  .big-letter {
+    font-size: 3rem;
+  }
+  .detail-percentage {
+    font-size: 1.2rem;
+  }
+  .solutions-containers h2 {
+    font-size: 1.8rem;
+  }
+  .solutions-containers p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .parameters-wrap {
+    width: 85%;
+    gap: 13rem;
+    padding: 8rem 0;
+  }
+  .title-parameters {
+    font-size: 4.5rem;
+  }
+  .percentages {
+    width: 24rem;
+    height: 22rem;
+  }
+  .big-letter {
+    font-size: 4rem;
+  }
+  .detail-percentage {
+    font-size: 2.3rem;
+  }
+
+  .metricas {
+    gap: 6rem;
+  }
+
+  .solutions {
+    gap: 8rem;
   }
 
   .solutions-containers {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    gap: 3rem;
   }
 
-  
   .solutions-containers h2 {
-    position: relative;
-    padding-left: 1.6rem;
+    font-size: 4rem;
   }
-  
-  .solutions-containers h2::before {
-    content: '';
-    position: absolute;
-    left: -1.625rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1.6rem;
-    height: 1.6rem;
-    background: #33b3ae;
-    border-radius: 50%;
-  }
-  
-
   .solutions-containers p {
-    color: #8b949e;
+    font-size: 2.5rem;
   }
-
-  @media screen and (max-width: 1215px) {
-    .parameters-wrap {
-      gap: 2rem;
-    }
-    .metricas {
-      width: inherit;
-    }
-    .solutions {
-      width: inherit;
-    }
+  .statistics {
+    display: flex;
+    gap: 4rem;
   }
-  
-
-  @media screen and (max-width: 910px) {
-    .parameters-wrap{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5rem;
-      width: 62rem;
-    }
-
-    .metricas {
-      width: 100%;
-    }
-
-    .solutions {
-      width: 100%;
-    }
-    .title-parameters{
-      font-size: 2.7rem;
-      padding-right: inherit;
-    }
-    .big-letter {
-      font-size: 3rem;
-    }
-    .detail-percentage {
-      font-size: 1.2rem;
-    }
-    .solutions-containers h2 {
-      font-size: 1.8rem;
-    }
-    .solutions-containers p {
-      font-size: 1.6rem;
-    }
-  }
-
-  @media screen and (max-width: 450px) {
-    .parameters-wrap {
-      width: 77%;
-      gap: 7rem;
-      padding: 5rem 0;
-    }
-    .title-parameters{
-      font-size: 3.9rem;
-    }
-    .percentages {
-      width: 20rem;
-      height: 18rem;
-    }
-    .big-letter {
-      font-size: 3.5rem;
-    }
-    .detail-percentage {
-      font-size: 1.9rem;
-    }
-    .solutions-containers h2 {
-      font-size: 3.5rem;
-    }
-    .solutions-containers p {
-      font-size: 2.1rem;
-    }
-  }
+}

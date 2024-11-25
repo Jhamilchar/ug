@@ -115,7 +115,7 @@
     gap: 3.5rem;
   }
   .about-description {
-    max-width: 92% !important;
+    max-width: 100% !important;
   }
   .top-container {
     height: 6rem !important;
@@ -124,7 +124,7 @@
     font-size: 5.6rem !important;
   }
   .about-description {
-    font-size: 3.3rem !important;
+    font-size: 3rem !important;
     line-height: 6.8rem !important;
   }
   .button-generic {
