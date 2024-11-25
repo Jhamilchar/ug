@@ -135,6 +135,32 @@
   }
 }
 
+@media screen and (max-width: 945px) {
+  .answer-text {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-details {
+    width: auto;
+  }
+
+  .pauta-text.active,
+  .pauta-text:hover {
+    border-bottom:  none !important;
+  }
+
+  .pauta-item.active {
+    border-bottom: 2px solid #1e7ba5;
+  }
+
+  .answer-box-small.show {
+    color: white;
+    font-size: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .responsive-pautas {
     grid-template-columns: 1fr;
@@ -148,7 +174,6 @@
   }
   .pauta-text {
     font-size: 2rem;
-    margin: 0 auto;
   }
   .image-referencial-small {
     display: flex;
@@ -245,4 +270,62 @@
 .pauta-text:hover {
   color: white;
   border-bottom: 2px solid #1e7ba5; /* Color del subrayado en hover */
+}
+
+/* Ocultar contenido específico en móvil o desktop */
+.desktop-only {
+    display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  padding-left: 2rem;
+  padding-top: 2.7rem;
+}
+.mobile-only {
+  display: none;
+}
+
+/* Estilos para el acordeón */
+.pauta-item {
+  border-bottom: 1px solid #444;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.answer-box-small {
+  display: none; /* Ocultar por defecto */
+  padding: 1rem 0;
+}
+
+.answer-box-small.show {
+  display: block;
+}
+
+/* Media Queries para móvil */
+@media screen and (max-width: 768px) {
+  .desktop-only {
+    display: none; /* Ocultar diseño de desktop en móvil */
+  }
+  .mobile-only {
+    display: flex;
+    flex-direction: column; /* Mostrar acordeón en móvil */
+  }
+  .pauta-text {
+    font-size: 2rem;
+    text-align: start;
+  }
+}
+
+
+
+.answer-box {
+  /* Elimina opacity inicial para asegurar visibilidad */
+  transform: scale(0.95); /* Suaviza el inicio de la animación */
+  transition: transform 0.4s ease;
+}
+
+.answer-box.show {
+  transform: scale(1); /* Escala normal al mostrar */
+  opacity: 1; /* Garantiza visibilidad */
 }

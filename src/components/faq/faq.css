@@ -148,3 +148,52 @@
         font-size: 2.5rem !important;
     }
 }
+/* Asegurarse de que las respuestas están ocultas por defecto */
+.faq-answer {
+    display: none; /* Las respuestas estarán ocultas */
+  }
+  
+  /* Mostrar la respuesta solo cuando la pregunta esté abierta */
+  .faq-answer.show {
+    display: block; /* Mostrar respuesta cuando se expanda */
+  }
+  
+  /* Asegurarse de que el icono también gira correctamente */
+  .icon {
+    font-size: 1.6rem;
+    margin-left: 0.5rem;
+    transform: rotate(133deg); /* Ajusta el ángulo de rotación deseado */
+    transition: transform 0.3s ease-out;
+  }
+  
+  .icon.open {
+    transform: rotate(315deg); /* Icono gira cuando se abre la respuesta */
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .faq-wrapp {
+      width: 100%;
+      padding: 2rem; /* Ajusta el espacio */
+    }
+  
+    .faq-list {
+      padding: 0; /* Ajusta el padding de la lista */
+    }
+  
+    .faq-question {
+      font-size: 1.5rem; /* Tamaño de fuente ajustado */
+      height: auto; /* Ajustar altura para contenido dinámico */
+      padding: 1rem 0; /* Espaciado adecuado */
+    }
+  
+    .faq-answer {
+      padding: 1rem;
+      font-size: 1.2rem; /* Ajusta tamaño de fuente en pantallas pequeñas */
+    }
+  
+    .faq-answer.show {
+      display: block; /* Mostrar la respuesta cuando esté abierta */
+    }
+  }
+  

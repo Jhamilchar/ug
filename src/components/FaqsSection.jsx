@@ -10,11 +10,13 @@ export const FaqsSection = () => {
   const [faqData, setFaqData] = useState(dataFaq);
 
   const toggleAnswer = (id) => {
-    setFaqData((prevData) =>
-      prevData.map((item) =>
-        item.id === id ? { ...item, isOpen: !item.isOpen } : item
-      )
-    );
+    setFaqData((prevData) => {
+      // Si la respuesta ya está abierta, la cierra
+      const updatedData = prevData.map((item) =>
+        item.id === id ? { ...item, isOpen: !item.isOpen } : { ...item, isOpen: false }
+      );
+      return updatedData;
+    });
   };
 
   return (
